@@ -10,6 +10,29 @@ $(function () {
             });
 
 
+    var $tabItem = $('.main-tab-item');
+    var $tabContent = $('.main-tab-content');
+    var selectedStyle = 'selected';
+    (function () {
+        var ind = 0;
+        $tabItem.each(function () {
+            if ($(this).hasClass(selectedStyle)) {
+                ind = $(this).index();
+            }
+        });
+        $tabContent.hide().eq(ind).show();
+    })();
+    $tabItem.click(function () {
+        var _ = $(this);
+        var ind = _.index();
+
+        if (!_.hasClass(selectedStyle)) {
+            $tabItem.removeClass(selectedStyle);
+            _.addClass(selectedStyle);
+            $tabContent.hide().eq(ind).show();
+        }
+    });
+
 
 
     //$('.medium-select').chosen({

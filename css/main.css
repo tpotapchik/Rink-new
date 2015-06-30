@@ -1075,7 +1075,22 @@ body {
     *display: inline;
     *zoom: 1;
     background: url("../img/sprite.png") no-repeat scroll 0 -28px transparent;
-    margin-top: 28px; }
+    margin-top: 28px;
+    position: relative; }
+  .basket .count {
+    position: absolute;
+    font-style: normal;
+    padding: 2px 5px;
+    color: #fff;
+    font-size: 10px;
+    background-color: #f58c42;
+    border-radius: 50%;
+    top: -4px;
+    right: -2px;
+    display: inline-block;
+    vertical-align: top;
+    *display: inline;
+    *zoom: 1; }
 
 .reserve-tickets img {
   width: 303px;
@@ -1095,6 +1110,9 @@ body {
   width: 100%;
   text-align: center;
   font-weight: 500; }
+
+.main-part.order-page {
+  background-color: #efeff4; }
 
 .main-tab-item-wrapper {
   background-color: #f0f694;
@@ -1130,17 +1148,20 @@ body {
   font-size: 1.6em;
   margin-bottom: 30px;
   line-height: 30px;
-  padding: 0 45px; }
+  padding: 30px 45px; }
   .main-tab-content ._title {
     font-size: 20px;
     font-weight: 700; }
   .main-tab-content.welc {
     text-align: center; }
-  .main-tab-content.reserv {
-    margin-top: 30px; }
+  .order-page .main-tab-content {
+    padding: 30px;
+    border: 1px solid #dadada;
+    margin: 20px 43px;
+    background-color: #fff; }
 
 .pic-wrap {
-  margin: 60px 0; }
+  margin: 30px 0; }
 
 .faq-title {
   text-transform: uppercase;
@@ -1148,7 +1169,7 @@ body {
   color: #998548;
   text-align: center;
   font-weight: 400;
-  margin-top: 60px; }
+  margin-top: 30px; }
 
 .faq-title-h2 {
   color: #998548;
@@ -1256,6 +1277,27 @@ body {
 
 .footer-link-wrap {
   margin-top: 30px; }
+
+.packages-info {
+  color: #998548;
+  font-size: 18px; }
+
+.available-p {
+  color: #998548;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: underline; }
+  .available-p:hover {
+    text-decoration: none; }
+
+.cost-package {
+  color: #998548;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: capitalize; }
+
+.packages-adv {
+  list-style: circle; }
 
 @media print {
   * {

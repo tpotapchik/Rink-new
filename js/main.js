@@ -33,18 +33,22 @@ $(function () {
         }
     });
 
+    $('.large-select').chosen({
+        disable_search: true,
+        inherit_select_classes: true,
+        width: "270px"
+    });
 
-
-    //$('.medium-select').chosen({
-    //    disable_search: true,
-    //    inherit_select_classes: true,
-    //    width: "200px"
-    //});
-    //$('.small-select').chosen({
-    //    disable_search: true,
-    //    inherit_select_classes: true,
-    //    width: "100px"
-    //});
+    $('.medium-select').chosen({
+        disable_search: true,
+        inherit_select_classes: true,
+        width: "150px"
+    });
+    $('.small-select').chosen({
+        disable_search: true,
+        inherit_select_classes: true,
+        width: "75px"
+    });
     //
     //$('.more-btn').click(function () {
     //    var $this = $(this);

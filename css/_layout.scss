@@ -153,20 +153,21 @@ body {
 }
 
 .component-select {
-    font-size: 18px;
-    color: $clr_title;
-    font-family: Tahoma, Arial, Helvetica, sans-serif;
-    font-weight: 700;
-//    margin: 0 10px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    padding: 0 10px;
+    line-height: 42px;
+    margin-bottom: 5px;
+    width: 100%;
+    @include box-sizing();
+
+    font-family: 'Oxygen', Arial, Helvetica, sans-serif;
 
     .chosen-single {
-        height: 31px;
-        line-height: 31px;
-        //border: 2px solid $bg_green;
-        //color: $clr_title;
-        padding-left: 7px;
-        @include bg(0, 0, "filter-bg.png", repeat);
-        width: 227px;
+        height: 42px;
+        line-height: 42px;
+        //width: 227px;
+        color: #979797;
 
         span {
             margin-right: 29px;
@@ -176,14 +177,13 @@ body {
             height: 100%;
 
             b {
-                @include bg(-99px, -56px);
-                width: 21px;
-                height: 10px;
+                @include bg(0, -58px);
+                width: 12px;
+                height: 6px;
                 position: absolute;
                 top: 50%;
                 left: 50%;
-                margin: -5px 0 0 -12px;
-
+                margin: -2px 0 0 -6px;
             }
         }
         &:hover {
@@ -191,19 +191,27 @@ body {
         }
     }
     .chosen-drop {
-        //border: 1px solid $clr_gray_form;
+        border:1px solid #cccccc;
+
         border-top: 0;
         background-color: #fff;
         margin-top: -1px;
-        width: 238px;
+        //width: 238px;
     }
     .chosen-results {
         li {
-            padding: 7px 15px 8px;
+            padding: 0 15px;
+            &:hover {
+                background: $bg_green;
+            }
+
         }
         .highlighted {
             //background: $clr_gray_form;
             color: #000;
+        }
+        .result-selected {
+            background: $bg_green;
         }
     }
     //&.chosen-with-drop {

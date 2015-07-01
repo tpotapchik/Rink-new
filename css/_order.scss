@@ -1,33 +1,137 @@
 .packages-info {
-    color:$clr_info;
+    color: $clr_info;
     font-size: 18px;
 }
+
 .available-p {
-    color:$clr_info;
+    color: $clr_info;
     font-size: 18px;
     text-transform: uppercase;
     text-decoration: underline;
 
-    &:hover{
+    &:hover {
         text-decoration: none;
     }
 
 }
-.cost-package{
-    color:$clr_info;
+
+.cost-package {
+    color: $clr_info;
     font-size: 18px;
     text-decoration: none;
     text-transform: capitalize;
 }
+
 .packages-adv {
     list-style: circle;
 }
+
 .order-tab {
     margin-top: -30px;
 }
-.order-navigation {
 
+.order-navigation {
+    overflow: hidden;
 }
+
 .order-step {
+    display: block;
+    float: left;
+    height: 45px;
+    background-color: $bg_green;
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 40px;
+    padding: 0 15px;
+    font-size: 14px;
+
+    &.active {
+        border-bottom: 5px solid $clr_orange;
+        background-color: #fff;
+        height: 40px;
+        padding: 0;
+        margin: 0 15px;
+    }
+    &.previous {
+        background: #fff;
+    }
+}
+
+.form-wrapper {
+    margin-top: 30px;
+}
+
+.form-column {
+    width: 48%;
+    margin-right: 4%;
+    float: left;
+
+    + .form-column {
+        margin-right: 0;
+    }
+}
+.form-block {
+    ~ .form-block {
+        margin-top: 30px;
+    }
+}
+.form-title {
+    font-size: 18px;
+    color: $clr_orange;
+    text-transform: uppercase;
+    border-bottom: 1px solid $clr_grey;
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+
+.form-title-detail {
+    color: $clr_grey;
+    border-radius: 3px;
+    border: 1px solid #c8d9cd;
+    background-color: #f2f898;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    padding: 0 10px;
+}
+
+.input {
+    display: block;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    padding: 0 10px;
+    line-height: 42px;
+    margin-bottom: 5px;
+    width: 100%;
+    @include box-sizing();
+    &.city{
+        width: 45%;
+        margin-right: 1%;
+    }
+    &.zip {
+        width: 30%;
+    }
+}
+
+.btn-group-form {
+    margin: 15px 0 35px;
+}
+.btn-login {
+    border:1px solid #cfd1be;
+    background-color: $bg_green;
+    box-shadow: none;
+    line-height: 36px;
+    padding: 0 35px;
+    border-radius: 3px;
+}
+.sign-in-fb {
+    @include inblock;
+    width: 224px;
+    height: 37px;
+    @include bg(0,0,"facebook.jpg");
+    float: right;
+}
+.text-link {
+    font-size: 14px;
     
 }

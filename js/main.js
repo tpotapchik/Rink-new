@@ -49,6 +49,9 @@ $(function () {
         inherit_select_classes: true,
         width: "75px"
     });
+    $( "#datepicker" ).datepicker({
+        inline: true
+    });
     //
     //$('.more-btn').click(function () {
     //    var $this = $(this);

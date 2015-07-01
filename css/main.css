@@ -1968,6 +1968,12 @@ body {
 
 .form-wrapper {
   margin-top: 30px; }
+  .form-wrapper.step0 {
+    display: none; }
+  .form-wrapper.step2 {
+    display: none; }
+  .form-wrapper.step3 {
+    display: none; }
 
 .form-column {
   width: 48%;
@@ -2053,29 +2059,107 @@ body {
 .calendar-wrapper {
   margin-bottom: 40px; }
 
-.calendar-items ._item {
-  display: inline-block;
-  padding-left: 1px;
-  font-size: 12px;
-  line-height: 15px; }
-  .calendar-items ._item:first-child {
-    padding-left: 0; }
-.calendar-items ._ico {
-  display: inline-block;
-  vertical-align: top;
-  *display: inline;
-  *zoom: 1;
-  width: 15px;
-  height: 15px;
-  margin-right: 10px; }
-  .calendar-items ._ico.ico1 {
+.calendar-items {
+  margin-top: 10px; }
+  .calendar-items ._item {
+    display: inline-block;
+    padding-left: 10px;
+    font-size: 12px;
+    line-height: 15px; }
+    .calendar-items ._item:first-child {
+      padding-left: 0; }
+  .calendar-items ._ico {
+    display: inline-block;
+    vertical-align: top;
+    *display: inline;
+    *zoom: 1;
+    width: 15px;
+    height: 15px;
+    margin-right: 10px; }
+    .calendar-items ._ico.ico1 {
+      background-color: #9eb80c; }
+    .calendar-items ._ico.ico2 {
+      background-color: #ffc750; }
+    .calendar-items ._ico.ico3 {
+      background-color: #d25480; }
+    .calendar-items ._ico.ico4 {
+      background-color: #f1f2f3; }
+
+.availability .border-t {
+  border: 1px solid #a0b600;
+  border-left: 1px solid #b8b8b8;
+  border-right: 1px solid #b8b8b8; }
+.availability ._title {
+  border-top: 1px solid #f0f6a7;
+  border-left: 1px solid #e0ec39;
+  border-right: 1px solid #e0ec39;
+  height: 38px;
+  line-height: 38px;
+  background: #dce374;
+  font-size: 19px;
+  text-align: center; }
+
+.availability-title {
+  border-bottom: 1px solid #b8b8b8;
+  border-left: 1px solid #b8b8b8;
+  border-right: 1px solid #b8b8b8; }
+  .availability-title div {
+    display: inline-block;
+    vertical-align: top;
+    *display: inline;
+    *zoom: 1;
+    width: 32%;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700; }
+
+.row-av {
+  border-bottom: 1px solid #b8b8b8;
+  border-left: 1px solid #b8b8b8;
+  border-right: 1px solid #b8b8b8; }
+  .row-av > div {
+    display: inline-block;
+    vertical-align: top;
+    *display: inline;
+    *zoom: 1;
+    width: 32%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 30px; }
+  .row-av ._time {
+    display: inline-block;
+    vertical-align: top;
+    *display: inline;
+    *zoom: 1;
+    text-transform: uppercase;
+    font-size: 15px;
+    line-height: 25px;
+    margin-top: 15px;
+    font-weight: 700; }
+  .row-av ._proposal {
+    display: inline-block;
+    vertical-align: top;
+    *display: inline;
+    *zoom: 1;
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: 700; }
+  .row-av ._count {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 700; }
+
+.btn-reserve {
+  border: 1px solid #cfd1be;
+  background-color: #dce374;
+  box-shadow: none;
+  line-height: 36px;
+  padding: 0 35px;
+  border-radius: 3px;
+  margin-top: 5px; }
+  .btn-reserve:hover {
     background-color: #9eb80c; }
-  .calendar-items ._ico.ico2 {
-    background-color: #ffc750; }
-  .calendar-items ._ico.ico3 {
-    background-color: #d25480; }
-  .calendar-items ._ico.ico4 {
-    background-color: #f1f2f3; }
 
 @media print {
   * {

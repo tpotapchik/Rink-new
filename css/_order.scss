@@ -64,13 +64,13 @@
         display: none;
     }
     &.step1 {
-        //display: none;
+        display: none;
     }
     &.step2 {
         display: none;
     }
     &.step3 {
-        display: none;
+        //display: none;
     }
 }
 
@@ -282,6 +282,73 @@
     margin-top: 5px;
     &:hover {
         background-color: $bg_green_hover;
+    }
+}
+.date-time {
+    text-transform: uppercase;
+    text-align: center;
+}
+.color-orange {
+    color:$clr_orange;
+}
+.black {
+    color:#000;
+}
+.reserved-item {
+    border:1px solid #c6c6c6;
+    border-radius: 2px;
+    margin-bottom: 10px;
+
+    ._title-r {
+        background-color: #f7f7f7;
+        border-bottom: 1px solid #dddddd;
+        padding: 0 10px;
+        line-height: 40px;
+    }
+}
+.total-price-res {
+    height: 50px;
+    line-height: 50px;
+    padding: 0 10px;
+
+}
+
+.counter {
+    width: 110px;
+    margin-top: 6px;
+    margin-left: 10px;
+
+    > span {
+        display: block;
+        float: left;
+        width: 35px;
+        height: 35px;
+        text-align: center;
+    }
+    .minus {
+        border: 1px solid #c6c6c6;
+        border-radius: 2px 0 0 2px;
 
     }
+    .result-count {
+        border-top: 1px solid #c6c6c6;
+        border-bottom: 1px solid #c6c6c6;
+        line-height: 35px;
+    }
+    .plus {
+        border: 1px solid #c6c6c6;
+        border-radius: 0 2px 2px 0;
+
+    }
+    .circle {
+        border-radius: 50%;
+        border: 1px solid #c6c6c6;
+        width: 24px;
+        height: 24px;
+        @include inblock;
+        margin-top: 4px;
+        line-height: 24px;
+        cursor: pointer;
+    }
+
 }

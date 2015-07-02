@@ -95,6 +95,18 @@
     .page_i {
         padding-bottom: 60px;
     }
+    .main-tab-item {
+        width: 32%;
+
+    }
+    .order-page .main-tab-item {
+        span:first-child {
+            display: none;
+        }
+        ._mobile {
+            display: block;
+        }
+    }
     .main-pic{
         overflow: hidden;
     }
@@ -112,6 +124,36 @@
     .navigation {
         display: none;
     }
+    .ui-datepicker {
+        width: 380px;
+    }
+    .ui-datepicker td span, .ui-datepicker td a {
+        width: 53px;
+    }
+    .row-av > div {
+        padding-left: 10px;
+    }
+    .btn-reserve {
+        padding: 0 25px;
+    }
+    .component-select,
+    .input.city,
+    .input.zip {
+        width: 100%!important;
+    }
+    .btn-back {
+        padding: 0 50px;
+    }
+
+}
+@media screen and (max-width: 960px) {
+    .form-column {
+        width: 100%;
+        margin: auto;
+        float: none;
+    }
+
+
 
 }
 @media screen and (max-width: 768px){
@@ -125,5 +167,41 @@
     .order-navigation {
         max-height: 45px;
     }
+    .main-pic ._bg {
+        height: 200px;
+    }
 
+}
+@media screen and (max-width: 560px) {
+    .order-page .main-tab-content {
+        margin: 20px 0;
+    }
+    .main-tab-content {
+        padding-left: 10px!important;
+        padding-right: 10px!important;
+    }
+    .main-tab-item {
+        font-size: 14px !important;
+    }
+}
+@media screen and (max-width: 460px) {
+    .ui-datepicker {
+        width: 301px;
+    }
+    .ui-datepicker td span, .ui-datepicker td a {
+        width: 42px;
+    }
+
+}
+@media screen and (max-width: 400px) {
+    .btn-reserve {
+        padding: 0 10px;
+    }
+    .logo {
+        margin-left: 0;
+    }
+    .sign-in-fb {
+        float: none;
+        margin-top: 10px;
+    }
 }

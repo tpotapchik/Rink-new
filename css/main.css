@@ -1779,7 +1779,14 @@ body {
   margin: 15px auto; }
 
 .main-pic {
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
+  .main-pic ._bg {
+    background: url("../img/temp/item5-0.jpg") no-repeat 50% 50%;
+    background-size: cover;
+    height: 470px; }
+  .main-pic.index-page ._bg {
+    background: url("../img/main-pic.jpg") no-repeat 50% 50%; }
 
 .main-pic-title {
   position: absolute;
@@ -1816,6 +1823,8 @@ body {
     background-color: #f0f694; }
     .order-page .main-tab-item:hover {
       background-color: #f58c42; }
+  .main-tab-item ._mobile {
+    display: none; }
   .main-tab-item.selected {
     color: #000;
     background-color: #fff; }
@@ -2059,14 +2068,6 @@ body {
 
 .form-wrapper {
   margin-top: 30px; }
-  .form-wrapper.step0 {
-    display: none; }
-  .form-wrapper.step1 {
-    display: none; }
-  .form-wrapper.step2 {
-    display: none; }
-  .form-wrapper.step3 {
-    display: none; }
 
 .form-column {
   width: 48%;
@@ -2388,6 +2389,14 @@ body {
   .page_i {
     padding-bottom: 60px; }
 
+  .main-tab-item {
+    width: 32%; }
+
+  .order-page .main-tab-item span:first-child {
+    display: none; }
+  .order-page .main-tab-item ._mobile {
+    display: block; }
+
   .main-pic {
     overflow: hidden; }
 
@@ -2402,7 +2411,32 @@ body {
     margin-right: 0; }
 
   .navigation {
-    display: none; } }
+    display: none; }
+
+  .ui-datepicker {
+    width: 380px; }
+
+  .ui-datepicker td span, .ui-datepicker td a {
+    width: 53px; }
+
+  .row-av > div {
+    padding-left: 10px; }
+
+  .btn-reserve {
+    padding: 0 25px; }
+
+  .component-select,
+  .input.city,
+  .input.zip {
+    width: 100% !important; }
+
+  .btn-back {
+    padding: 0 50px; } }
+@media screen and (max-width: 960px) {
+  .form-column {
+    width: 100%;
+    margin: auto;
+    float: none; } }
 @media screen and (max-width: 768px) {
   .reservation-item {
     width: 49%;
@@ -2411,6 +2445,35 @@ body {
       margin-right: 1%; }
 
   .order-navigation {
-    max-height: 45px; } }
+    max-height: 45px; }
+
+  .main-pic ._bg {
+    height: 200px; } }
+@media screen and (max-width: 560px) {
+  .order-page .main-tab-content {
+    margin: 20px 0; }
+
+  .main-tab-content {
+    padding-left: 10px !important;
+    padding-right: 10px !important; }
+
+  .main-tab-item {
+    font-size: 14px !important; } }
+@media screen and (max-width: 460px) {
+  .ui-datepicker {
+    width: 301px; }
+
+  .ui-datepicker td span, .ui-datepicker td a {
+    width: 42px; } }
+@media screen and (max-width: 400px) {
+  .btn-reserve {
+    padding: 0 10px; }
+
+  .logo {
+    margin-left: 0; }
+
+  .sign-in-fb {
+    float: none;
+    margin-top: 10px; } }
 
 /*# sourceMappingURL=main.css.map */

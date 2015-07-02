@@ -135,12 +135,22 @@
     width: 303px;
     height: 95px;
     margin: 15px auto;
-
 }
 
 .main-pic {
     position: relative;
+    overflow: hidden;
+    ._bg {
+        background: url("../img/temp/item5-0.jpg") no-repeat 50% 50%;;
+        background-size: cover;
+
+        height: 470px;
+    }
+    &.index-page ._bg {
+        background: url("../img/main-pic.jpg") no-repeat 50% 50%;;
+    }
 }
+
 
 .main-pic-title {
     position: absolute;
@@ -183,6 +193,10 @@
             background-color: $clr_orange;
         }
     }
+    ._mobile {
+        display: none;
+    }
+
 
     &.selected {
         color: #000;

@@ -1612,6 +1612,46 @@ body {
   .component-select .chosen-results .result-selected {
     background: #dce374; }
 
+/*BUTTONS*/
+.btn {
+  border: 1px solid #cfd1be;
+  line-height: 36px;
+  border-radius: 3px;
+  box-shadow: none; }
+
+.btn-login {
+  background-color: #dce374;
+  padding: 0 35px; }
+  .btn-login:hover {
+    background-color: #9eb80c; }
+
+.btn-back {
+  background-color: #f7f7f7;
+  padding: 0 100px; }
+  .btn-back:hover {
+    background-color: #eeeeee; }
+
+.btn-edit {
+  background-color: #f7f7f7;
+  padding: 0 10px;
+  margin-top: 69px; }
+  .btn-edit:hover {
+    background-color: #eeeeee; }
+
+.btn-reserve {
+  background-color: #dce374;
+  padding: 0 35px;
+  margin-top: 5px; }
+  .btn-reserve:hover {
+    background-color: #9eb80c; }
+
+.btn-add-order {
+  color: #fff;
+  padding: 0 40px;
+  background-color: #f58c42; }
+  .btn-add-order:hover {
+    background-color: #e6843e; }
+
 .header-top {
   background-color: #dce374;
   height: 42px;
@@ -1780,10 +1820,16 @@ body {
     color: #000;
     background-color: #fff; }
     .order-page .main-tab-item.selected {
-      background-color: #f58c42; }
+      background-color: #f58c42;
+      color: #fff; }
   .order-page .main-tab-item {
     background-color: #fff;
-    color: #000; }
+    color: #000;
+    font-size: 20px; }
+    .order-page .main-tab-item:first-child {
+      border-radius: 0 0 0 5px; }
+    .order-page .main-tab-item:last-child {
+      border-radius: 0 0 5px 0; }
 
 .main-tab-content {
   font-size: 1.6em;
@@ -1799,7 +1845,8 @@ body {
     padding: 30px;
     border: 1px solid #dadada;
     margin: 20px 43px;
-    background-color: #fff; }
+    background-color: #fff;
+    border-radius: 3px; }
 
 .pic-wrap {
   margin: 30px 0; }
@@ -1974,6 +2021,8 @@ body {
     display: none; }
   .form-wrapper.step2 {
     display: none; }
+  .form-wrapper.step3 {
+    display: none; }
 
 .form-column {
   width: 48%;
@@ -1986,7 +2035,7 @@ body {
     padding: 0 5px;
     background-color: #efeff4;
     border: 1px solid #e0e0e2;
-    border-radius: 2px; }
+    border-radius: 3px; }
 
 .form-block ~ .form-block {
   margin-top: 30px; }
@@ -2027,26 +2076,6 @@ body {
 
 .btn-group-form {
   margin: 15px 0 35px; }
-
-.btn-login {
-  border: 1px solid #cfd1be;
-  background-color: #dce374;
-  box-shadow: none;
-  line-height: 36px;
-  padding: 0 35px;
-  border-radius: 3px; }
-  .btn-login:hover {
-    background-color: #9eb80c; }
-
-.btn-back {
-  border: 1px solid #cfd1be;
-  background-color: #f7f7f7;
-  box-shadow: none;
-  line-height: 36px;
-  padding: 0 100px;
-  border-radius: 3px; }
-  .btn-back:hover {
-    background-color: #eeeeee; }
 
 .sign-in-fb {
   display: inline-block;
@@ -2155,17 +2184,6 @@ body {
     margin-top: 15px;
     font-weight: 700; }
 
-.btn-reserve {
-  border: 1px solid #cfd1be;
-  background-color: #dce374;
-  box-shadow: none;
-  line-height: 36px;
-  padding: 0 35px;
-  border-radius: 3px;
-  margin-top: 5px; }
-  .btn-reserve:hover {
-    background-color: #9eb80c; }
-
 .date-time {
   text-transform: uppercase;
   text-align: center; }
@@ -2181,7 +2199,7 @@ body {
 
 .reserved-item {
   border: 1px solid #c6c6c6;
-  border-radius: 2px;
+  border-radius: 3px;
   margin-bottom: 10px; }
   .reserved-item ._title-r {
     background-color: #f7f7f7;
@@ -2206,14 +2224,14 @@ body {
     text-align: center; }
   .counter .minus {
     border: 1px solid #c6c6c6;
-    border-radius: 2px 0 0 2px; }
+    border-radius: 3px 0 0 3px; }
   .counter .result-count {
     border-top: 1px solid #c6c6c6;
     border-bottom: 1px solid #c6c6c6;
     line-height: 35px; }
   .counter .plus {
     border: 1px solid #c6c6c6;
-    border-radius: 0 2px 2px 0; }
+    border-radius: 0 3px 3px 0; }
   .counter .circle {
     border-radius: 50%;
     border: 1px solid #c6c6c6;
@@ -2226,6 +2244,25 @@ body {
     margin-top: 4px;
     line-height: 24px;
     cursor: pointer; }
+
+.block-info-buyer {
+  border: 1px solid #c6c6c6;
+  border-radius: 3px;
+  padding: 5px; }
+  .block-info-buyer p {
+    line-height: 18px;
+    margin: 0; }
+
+.order-info {
+  font-size: 12px;
+  font-weight: 700;
+  border-bottom: 1px solid #a6a6a6; }
+  .order-info span + span {
+    font-weight: 400; }
+
+.total-check {
+  font-weight: 700;
+  text-align: right; }
 
 @media print {
   * {

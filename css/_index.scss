@@ -167,7 +167,6 @@
     .order-page & {
         background-color: #efeff4;
     }
-
 }
 
 .main-tab-item {
@@ -192,15 +191,24 @@
 
         .order-page & {
             background-color: $clr_orange;
+            color:#fff;
         }
     }
 
     .order-page & {
         background-color: #fff;
         color:#000;
-    }
+        font-size: 20px;
 
+        &:first-child {
+            border-radius: 0 0 0 5px;
+        }
+        &:last-child {
+            border-radius: 0 0 5px 0;
+        }
+    }
 }
+
 
 .main-tab-content {
     font-size: 1.6em;
@@ -224,6 +232,7 @@
         border:1px solid #dadada;
         margin: 20px 43px;
         background-color: #fff;
+        border-radius: 3px;
     }
 }
 

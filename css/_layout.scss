@@ -192,7 +192,6 @@ body {
     }
     .chosen-drop {
         border:1px solid #cccccc;
-
         border-top: 0;
         background-color: #fff;
         margin-top: -1px;
@@ -226,6 +225,61 @@ body {
     //}
 }
 
+/*BUTTONS*/
+.btn {
+    border: 1px solid #cfd1be;
+    line-height: 36px;
+    border-radius: 3px;
+    box-shadow: none;
+}
+
+.btn-login {
+    background-color: $bg_green;
+    padding: 0 35px;
+
+    &:hover {
+        background-color: $bg_green_hover;
+    }
+}
+
+.btn-back {
+    background-color: #f7f7f7;
+    padding: 0 100px;
+
+    &:hover {
+        background-color: #eeeeee;
+    }
+}
+
+.btn-edit {
+    background-color: #f7f7f7;
+    padding: 0 10px;
+    margin-top: 69px;
+
+    &:hover {
+        background-color: #eeeeee;
+    }
+
+}
+
+.btn-reserve {
+    background-color: #dce374;
+    padding: 0 35px;
+    margin-top: 5px;
+
+    &:hover {
+        background-color: $bg_green_hover;
+    }
+}
+.btn-add-order {
+    color:#fff;
+    padding: 0 40px;
+    background-color: $clr_orange;
+
+    &:hover {
+        background-color: #e6843e;
+    }
+}
 
 
 

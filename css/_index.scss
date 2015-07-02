@@ -109,7 +109,6 @@
     border-bottom: 1px solid #d7d7d7;
     border-right: 1px solid #d7d7d7;
 
-
     ._ico {
         width: 26px;
         height: 27px;
@@ -122,7 +121,7 @@
         position: absolute;
         font-style: normal;
         padding: 2px 5px;
-        color:#fff;
+        color: #fff;
         font-size: 10px;
         background-color: $clr_orange;
         border-radius: 50%;
@@ -191,13 +190,13 @@
 
         .order-page & {
             background-color: $clr_orange;
-            color:#fff;
+            color: #fff;
         }
     }
 
     .order-page & {
         background-color: #fff;
-        color:#000;
+        color: #000;
         font-size: 20px;
 
         &:first-child {
@@ -208,7 +207,6 @@
         }
     }
 }
-
 
 .main-tab-content {
     font-size: 1.6em;
@@ -229,7 +227,7 @@
     }
     .order-page & {
         padding: 30px;
-        border:1px solid #dadada;
+        border: 1px solid #dadada;
         margin: 20px 43px;
         background-color: #fff;
         border-radius: 3px;
@@ -274,6 +272,7 @@
     margin-left: 2%;
     max-width: 340px;
     margin-bottom: 30px;
+    overflow: hidden;
 
     //width: 340px;
     //margin-left: 15px;
@@ -355,10 +354,8 @@
             &:hover {
                 background-color: #e0803c;
             }
-
         }
     }
-
 }
 
 .footer {
@@ -404,10 +401,58 @@
 
 .footer-logo {
     margin-top: 30px;
-
 }
 
 .footer-link-wrap {
     margin-top: 30px;
-
 }
+
+.footer-mobile {
+    display: none;
+    height: 59px;
+    border-top: 1px solid #c6c6c6;
+    font-size: 14px;
+    padding: 0 10px;
+    text-align: right;
+    margin-top: -60px;
+
+    a {
+        color: #b2b856;
+        text-decoration: none;
+        line-height: 40px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.mobile-menu {
+    display: none;
+    height: 45px;
+    padding: 0 10px;
+    float: left;
+    border-left: 1px solid #d9d9d9;
+    border-right: 1px solid #d9d9d9;
+
+    ._ico {
+        @include inblock;
+        width: 25px;
+        height: 23px;
+        @include bg(0, -67px);
+        margin-top: 9px;
+    }
+}
+
+.mobile-menu-block {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 200px;
+    background-color: #979797; /***********************/
+}
+
+

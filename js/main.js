@@ -52,6 +52,12 @@ $(function () {
     $( "#datepicker" ).datepicker({
         inline: true
     });
+    $('.mobile-menu').click(function(){
+        $('.mobile-menu-block').fadeIn(400);
+    });
+    $('.icon-close').click(function(){
+        $('.mobile-menu-block').fadeOut(400);
+    });
     //
     //$('.more-btn').click(function () {
     //    var $this = $(this);

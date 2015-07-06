@@ -1544,27 +1544,28 @@ body {
 .component-checkbox {
   cursor: default;
   position: relative;
-  padding-right: 48px;
-  min-height: 50px;
-  font-size: 1.8em;
-  line-height: 50px;
+  padding-left: 48px;
+  min-height: 41px;
+  font-size: 14px;
+  line-height: 42px;
   font-weight: 700;
-  font-family: Tahoma, Arial, Helvetica, sans-serif; }
+  font-family: 'Oxygen',sans-serif;
+  margin: 5px 0; }
   .component-checkbox input {
     left: 0;
     position: absolute;
     top: 0;
     opacity: 0; }
     .component-checkbox input + label:before {
-      background: url("../img/checkbox.png") no-repeat scroll 0 0 transparent;
+      background: url("../img/sprite.png") no-repeat scroll 0 -98px transparent;
       content: "";
-      height: 50px;
-      right: -7px;
+      height: 41px;
+      left: 0;
       position: absolute;
-      top: -9px;
-      width: 48px; }
+      top: 0;
+      width: 43px; }
     .component-checkbox input:checked + label:before {
-      background-position: 0 -52px; }
+      background-position: 0 -142px; }
   .component-checkbox label {
     cursor: default;
     display: block;
@@ -2375,6 +2376,9 @@ body {
 @media screen and (min-width: 1024px) {
   .mobile-menu-block {
     display: none !important; } }
+@media screen and (max-width: 1100px) {
+  .main-tab-item {
+    width: 32%; } }
 @media screen and (max-width: 1024px) {
   .header-top,
   .buy-tickets {

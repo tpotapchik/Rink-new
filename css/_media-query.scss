@@ -62,6 +62,13 @@
     .mobile-menu-block {
         display: none!important;
     }
+
+}
+@media screen and (max-width: 1100px) {
+    .main-tab-item {
+        width: 32%;
+
+    }
 }
 
 @media screen and (max-width: 1024px){
@@ -107,6 +114,7 @@
             display: block;
         }
     }
+
     .main-pic{
         overflow: hidden;
     }

@@ -106,12 +106,13 @@ body {
 .component-checkbox {
     cursor: default;
     position: relative;
-    padding-right: 48px;
-    min-height: 50px;
-    font-size: 1.8em;
-    line-height: 50px;
+    padding-left: 48px;
+    min-height: 41px;
+    font-size: 14px;
+    line-height: 42px;
     font-weight: 700;
-    font-family: $ptr;
+    font-family: 'Oxygen',sans-serif;
+    margin: 5px 0;
 
     input {
         left: 0;
@@ -120,19 +121,18 @@ body {
         opacity: 0;
 
         + label:before {
-            @include bg(0, 0, "checkbox.png");
+            @include bg(0, -98px);
             content: "";
-            height: 50px;
-            right: -7px;
+            height: 41px;
+            left:0;
             position: absolute;
-            top: -9px;
-            width: 48px;
+            top: 0;
+            width: 43px;
         }
         &:checked + label:before {
-            background-position: 0 -52px;
+            background-position: 0 -142px;
         }
         &:hover + label:before {
-            //            background-position: -18px 0;
         }
         &:checked:hover + label:before {
         }

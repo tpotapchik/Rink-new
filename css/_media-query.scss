@@ -170,6 +170,13 @@
     .main-pic ._bg {
         height: 200px;
     }
+    .pic-wrap img{
+        width: 200px;
+        height: auto;
+    }
+    .btn-back{
+        margin-bottom: 10px;
+    }
 
 }
 @media screen and (max-width: 560px) {
@@ -183,6 +190,12 @@
     .main-tab-item {
         font-size: 14px !important;
     }
+    .reservation-item {
+        width: 100%;
+        margin: 5px auto!important;
+        float: none;
+    }
+
 }
 @media screen and (max-width: 460px) {
     .ui-datepicker {
@@ -191,6 +204,7 @@
     .ui-datepicker td span, .ui-datepicker td a {
         width: 42px;
     }
+
 
 }
 @media screen and (max-width: 400px) {

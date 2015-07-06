@@ -280,6 +280,20 @@ body {
         background-color: #e6843e;
     }
 }
+.btn-review {
+    padding: 0 40px;
+    background-color: $bg_green;
+
+    &:hover {
+        background-color: $bg_green_hover;
+    }
+
+}
+.btn-gr {
+    clear: both;
+    padding-top: 10px;
+}
+
 
 
 

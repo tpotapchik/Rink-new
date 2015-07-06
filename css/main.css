@@ -1652,6 +1652,16 @@ body {
   .btn-add-order:hover {
     background-color: #e6843e; }
 
+.btn-review {
+  padding: 0 40px;
+  background-color: #dce374; }
+  .btn-review:hover {
+    background-color: #9eb80c; }
+
+.btn-gr {
+  clear: both;
+  padding-top: 10px; }
+
 .header-top {
   background-color: #dce374;
   height: 42px;
@@ -2068,6 +2078,12 @@ body {
 
 .form-wrapper {
   margin-top: 30px; }
+  .form-wrapper.step0 {
+    display: none; }
+  .form-wrapper.step1 {
+    display: none; }
+  .form-wrapper.step2 {
+    display: none; }
 
 .form-column {
   width: 48%;
@@ -2448,7 +2464,14 @@ body {
     max-height: 45px; }
 
   .main-pic ._bg {
-    height: 200px; } }
+    height: 200px; }
+
+  .pic-wrap img {
+    width: 200px;
+    height: auto; }
+
+  .btn-back {
+    margin-bottom: 10px; } }
 @media screen and (max-width: 560px) {
   .order-page .main-tab-content {
     margin: 20px 0; }
@@ -2458,7 +2481,12 @@ body {
     padding-right: 10px !important; }
 
   .main-tab-item {
-    font-size: 14px !important; } }
+    font-size: 14px !important; }
+
+  .reservation-item {
+    width: 100%;
+    margin: 5px auto !important;
+    float: none; } }
 @media screen and (max-width: 460px) {
   .ui-datepicker {
     width: 301px; }

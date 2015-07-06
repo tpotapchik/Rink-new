@@ -2217,7 +2217,10 @@ body {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    padding-left: 30px; }
+    text-align: center; }
+    .row-av > div:first-child {
+      text-align: left;
+      padding-left: 30px; }
   .row-av ._time {
     display: inline-block;
     vertical-align: top;
@@ -2434,7 +2437,7 @@ body {
   .ui-datepicker td span, .ui-datepicker td a {
     width: 53px; }
 
-  .row-av > div {
+  .row-av > div:first-child {
     padding-left: 10px; }
 
   .btn-reserve {

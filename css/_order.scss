@@ -236,7 +236,12 @@
         @include inblock;
         width: 32%;
         @include box-sizing;
-        padding-left: 30px;
+        text-align: center;
+
+        &:first-child {
+            text-align: left;
+            padding-left: 30px;
+        }
     }
     ._time {
         @include inblock;

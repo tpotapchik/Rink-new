@@ -2119,6 +2119,7 @@ body {
   border-radius: 3px;
   padding: 0 10px;
   line-height: 42px;
+  height: 42px;
   margin-bottom: 5px;
   width: 100%;
   -webkit-box-sizing: border-box;

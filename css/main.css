@@ -2079,12 +2079,6 @@ body {
 
 .form-wrapper {
   margin-top: 30px; }
-  .form-wrapper.step0 {
-    display: none; }
-  .form-wrapper.step1 {
-    display: none; }
-  .form-wrapper.step2 {
-    display: none; }
 
 .form-column {
   width: 48%;

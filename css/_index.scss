@@ -241,10 +241,12 @@
     }
     .order-page & {
         padding: 30px;
-        border: 1px solid #dadada;
-        margin: 20px 43px;
+        border-left: 1px solid #dadada;
+        border-right: 1px solid #dadada;
+        border-bottom: 1px solid #dadada;
+        margin: 0 43px 20px;
         background-color: #fff;
-        border-radius: 3px;
+        border-radius: 0 0 3px 3px;
     }
 }
 

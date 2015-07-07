@@ -25,13 +25,19 @@
 .packages-adv {
     list-style: circle;
 }
-
 .order-tab {
-    margin-top: -30px;
-}
-
-.order-navigation {
+    padding: 0 0 0 30px;
+    margin: 20px 43px 0;
+    border-left: 1px solid #dadada;
+    border-right: 1px solid #dadada;
+    border-top: 1px solid #dadada;
+    border-radius: 3px 3px 0 0;
+    background-color: #fff;
+    max-height: 45px;
     overflow: hidden;
+}
+.order-navigation {
+    background-color: $bg_green;
 }
 
 .order-step {
@@ -46,12 +52,19 @@
     padding: 0 15px;
     font-size: 14px;
 
+    span {
+        display: block;
+    }
+
+
     &.active {
-        border-bottom: 5px solid $clr_orange;
+        border-bottom: 5px solid #fff;
         background-color: #fff;
         height: 40px;
-        padding: 0;
-        margin: 0 15px;
+
+        span {
+            border-bottom: 5px solid $clr_orange;
+        }
     }
     &.previous {
         background: #fff;
@@ -59,7 +72,8 @@
 }
 
 .form-wrapper {
-    margin-top: 30px;
+    //margin-top: 30px;
+
     &.step0 {
        // display: none;
     }

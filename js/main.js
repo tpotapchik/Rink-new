@@ -62,7 +62,7 @@ $(function () {
         var tab_faq = $('.main-tab-item.faq');
         tab_faq.click();
         var _offset = tab_faq.offset().top;
-        console.log(_offset);
+
         $('body,html').animate({
             'scrollTop': _offset
         }, 400)

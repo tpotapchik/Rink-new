@@ -79,7 +79,9 @@
         height: 45px;
         border-bottom: 1px solid #d9d9d9;;
     }
-
+    .basket {
+        display: block;
+    }
     .questions,
     .basket {
         height: 45px;
@@ -131,6 +133,7 @@
     .navigation {
         display: none;
     }
+
     .ui-datepicker {
         width: 380px;
     }

@@ -1752,6 +1752,7 @@ body {
     margin-top: 28px; }
 
 .basket {
+  display: none;
   float: left;
   height: 84px;
   width: 65px;
@@ -2444,6 +2445,9 @@ body {
   .header {
     height: 45px;
     border-bottom: 1px solid #d9d9d9; }
+
+  .basket {
+    display: block; }
 
   .questions,
   .basket {

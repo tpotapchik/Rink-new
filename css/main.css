@@ -2485,6 +2485,9 @@ body {
   .main-tab-item {
     font-size: 14px !important; }
 
+  .main-pic-title {
+    font-size: 16px; }
+
   .reservation-item {
     width: 100%;
     margin: 5px auto !important;

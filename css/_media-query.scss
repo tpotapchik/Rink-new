@@ -67,7 +67,6 @@
 @media screen and (max-width: 1100px) {
     .main-tab-item {
         width: 32%;
-
     }
 }
 
@@ -160,9 +159,6 @@
         margin: auto;
         float: none;
     }
-
-
-
 }
 @media screen and (max-width: 768px){
     .reservation-item {
@@ -182,10 +178,10 @@
         width: 200px;
         height: auto;
     }
+
     .btn-back{
         margin-bottom: 10px;
     }
-
 }
 @media screen and (max-width: 560px) {
     .order-page .main-tab-content {
@@ -198,12 +194,14 @@
     .main-tab-item {
         font-size: 14px !important;
     }
+    .main-pic-title {
+        font-size: 16px;
+    }
     .reservation-item {
         width: 100%;
         margin: 5px auto!important;
         float: none;
     }
-
 }
 @media screen and (max-width: 460px) {
     .ui-datepicker {
@@ -212,8 +210,6 @@
     .ui-datepicker td span, .ui-datepicker td a {
         width: 42px;
     }
-
-
 }
 @media screen and (max-width: 400px) {
     .btn-reserve {

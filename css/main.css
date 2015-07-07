@@ -2333,6 +2333,56 @@ body {
   font-weight: 700;
   text-align: right; }
 
+.payment-data {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.PaymentMethodChoice {
+  margin: 20px 0; }
+  .PaymentMethodChoice label {
+    margin: 0 10px 5px 0; }
+
+.PaymentSection {
+  font: 13px/16px 'Oxygen', Arial, Helvetica, sans-serif; }
+
+.FieldGroupSeparator {
+  font-size: 12px;
+  font-weight: 700;
+  border-bottom: 1px solid #a6a6a6;
+  margin: 10px 0; }
+
+.DataLabelEdit {
+  display: block;
+  width: 160px;
+  margin-bottom: 5px; }
+  .PaymentItemAcct .DataLabelEdit {
+    width: 160px;
+    display: inline-block;
+    vertical-align: top;
+    *display: inline;
+    *zoom: 1; }
+
+.DataVal input {
+  margin-bottom: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  height: 25px; }
+  .PaymentItemAcct .DataVal input {
+    width: auto; }
+
+.DataRowEditCustomerType .DataVal select {
+  width: auto;
+  height: 25px; }
+.DataRowEditCustomerType .DataLabelEdit {
+  width: 160px;
+  display: inline-block;
+  vertical-align: top;
+  *display: inline;
+  *zoom: 1; }
+
+.Comment a {
+  color: #1c72cb; }
+
 @media print {
   * {
     background: transparent !important;

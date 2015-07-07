@@ -1,0 +1,63 @@
+.payment-data {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.PaymentMethodChoice {
+    margin: 20px 0;
+    label {
+        margin: 0 10px 5px 0;
+    }
+}
+
+.PaymentSection {
+    font: 13px/16px 'Oxygen', Arial, Helvetica, sans-serif;
+}
+
+.FieldGroupSeparator {
+    font-size: 12px;
+    font-weight: 700;
+    border-bottom: 1px solid #a6a6a6;
+    margin: 10px 0;
+
+}
+
+.DataLabelEdit {
+    display: block;
+    width: 160px;
+    margin-bottom: 5px;
+
+    .PaymentItemAcct & {
+        width: 160px;
+        @include inblock;
+    }
+}
+
+.DataVal {
+    input {
+        margin-bottom: 5px;
+        width: 100%;
+        box-sizing: border-box;
+        height: 25px;
+
+        .PaymentItemAcct & {
+            width: auto;
+        }
+    }
+}
+
+.DataRowEditCustomerType {
+    .DataVal select {
+        width: auto;
+        height: 25px;
+    }
+    .DataLabelEdit {
+        width: 160px;
+        @include inblock;
+    }
+}
+
+.Comment a {
+    color: #1c72cb;
+}
+

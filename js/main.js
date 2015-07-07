@@ -58,6 +58,17 @@ $(function () {
     $('.icon-close').click(function(){
         $('.mobile-menu-block').fadeOut(400);
     });
+    $('.questions').click(function () {
+        var tab_faq = $('.main-tab-item.faq');
+        tab_faq.click();
+        var _offset = tab_faq.offset().top;
+        console.log(_offset);
+        $('body,html').animate({
+            'scrollTop': _offset
+        }, 400)
+    });
+
+
     //
     //$('.more-btn').click(function () {
     //    var $this = $(this);

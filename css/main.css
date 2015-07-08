@@ -1901,9 +1901,7 @@ body {
   float: left;
   line-height: 18px;
   font-size: 14px; }
-  .reservation-item:first-child {
-    margin-left: 0; }
-  .reservation-item:nth-child(4) {
+  .reservation-item:nth-child(3n+1) {
     margin-left: 0; }
   .reservation-item ._bg-pic {
     width: 340px;
@@ -1931,7 +1929,9 @@ body {
     text-transform: uppercase;
     background-color: #d4dce2;
     height: 37px;
-    padding: 5px 10px; }
+    max-height: 37px;
+    padding: 5px 10px;
+    overflow: hidden; }
   .reservation-item ._description {
     background-color: #eff3f6;
     padding: 5px 10px; }
@@ -1943,13 +1943,17 @@ body {
     .reservation-item .btn-group .btn-check {
       width: 50%;
       float: left;
-      background-color: #dbdd59; }
+      background-color: #dbdd59;
+      text-shadow: -1px -1px #bcbcbc;
+      font-weight: 700; }
       .reservation-item .btn-group .btn-check:hover {
         background-color: #cacc53; }
     .reservation-item .btn-group .btn-book {
       width: 50%;
       float: left;
-      background-color: #f58c42; }
+      background-color: #f58c42;
+      text-shadow: -1px -1px #bcbcbc;
+      font-weight: 700; }
       .reservation-item .btn-group .btn-book:hover {
         background-color: #e0803c; }
 

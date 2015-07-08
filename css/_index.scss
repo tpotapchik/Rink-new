@@ -297,10 +297,7 @@
     line-height: 18px;
     font-size: 14px;
 
-    &:first-child {
-        margin-left: 0;
-    }
-    &:nth-child(4) {
+    &:nth-child(3n+1) {
         margin-left: 0;
     }
 
@@ -340,7 +337,9 @@
         text-transform: uppercase;
         background-color: #d4dce2;
         height: 37px;
+        max-height: 37px;
         padding: 5px 10px;
+        overflow: hidden;
     }
     ._description {
         background-color: #eff3f6;
@@ -357,6 +356,8 @@
             width: 50%;
             float: left;
             background-color: #dbdd59;
+            text-shadow: -1px -1px #bcbcbc;
+            font-weight: 700;
 
             &:hover {
                 background-color: #cacc53;
@@ -367,6 +368,8 @@
             width: 50%;
             float: left;
             background-color: #f58c42;
+            text-shadow: -1px -1px #bcbcbc;
+            font-weight: 700;
 
             &:hover {
                 background-color: #e0803c;

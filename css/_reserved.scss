@@ -68,6 +68,11 @@ a {
 .clear {
     clear: both !important;
 }
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
 
 .clearfix {
     @include clearfix;

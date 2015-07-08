@@ -113,8 +113,16 @@
 
         &:first-child {
             width: 34%;
+            border-radius: 0 0 3px 3px;
         }
-
+        &:last-child {
+            border-radius: 0 3px 3px 0;
+        }
+    }
+    .order-tab,
+    .main-tab-content{
+        margin-left: 15px!important;
+        margin-right: 15px!important;
     }
     .order-page .main-tab-item {
         span:first-child {
@@ -123,6 +131,10 @@
         ._mobile {
             display: block;
         }
+    }
+    .main-tab-content {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
     }
 
     .main-pic{
@@ -196,18 +208,20 @@
     .btn-back{
         margin-bottom: 10px;
     }
+    .form-column.check-result {
+        display: none;
+    }
 }
 @media screen and (max-width: 560px) {
     .order-page .main-tab-content {
-        margin: 0 ;
+        margin: 0!important;
     }
     .order-tab {
-        margin: 20px 0 0;
+        margin: 20px 0 0!important;
     }
     .order-tab {
         padding-left: 10px;
     }
-
 
     .main-tab-content {
         padding-left: 10px!important;
@@ -234,7 +248,11 @@
         border:1px solid #dadada;
         border-radius: 3px;
     }
-
+    .component-checkbox.agreement {
+        label {
+            line-height: 20px;
+        }
+    }
 }
 @media screen and (max-width: 460px) {
     .ui-datepicker {
@@ -243,6 +261,7 @@
     .ui-datepicker td span, .ui-datepicker td a {
         width: 42px;
     }
+
 }
 @media screen and (max-width: 400px) {
     .btn-reserve {

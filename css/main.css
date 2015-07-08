@@ -254,6 +254,11 @@ a {
 .clear {
   clear: both !important; }
 
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
 .clearfix {
   *zoom: 1; }
   .clearfix:before, .clearfix:after {
@@ -1549,6 +1554,8 @@ body {
   font-weight: 700;
   font-family: 'Oxygen',sans-serif;
   margin: 5px 0; }
+  .component-checkbox.vip-add {
+    margin: 5px 10px; }
   .component-checkbox input {
     left: 0;
     position: absolute;
@@ -1566,7 +1573,8 @@ body {
       background-position: 0 -142px; }
   .component-checkbox label {
     cursor: default;
-    display: block;
+    display: inline-block;
+    vertical-align: top;
     line-height: 42px; }
 
 .component-select {
@@ -1616,7 +1624,8 @@ body {
   border: 1px solid #cfd1be;
   line-height: 36px;
   border-radius: 3px;
-  box-shadow: none; }
+  box-shadow: none;
+  font-weight: 700; }
 
 .btn-login {
   background-color: #dce374;
@@ -2118,7 +2127,8 @@ body {
   width: 48%;
   margin-right: 4%;
   float: left;
-  font-size: 14px; }
+  font-size: 14px;
+  font-weight: 700; }
   .form-column + .form-column {
     margin-right: 0; }
   .form-column.check-result .form-block {
@@ -2136,7 +2146,8 @@ body {
   text-transform: uppercase;
   border-bottom: 1px solid #a6a6a6;
   margin-bottom: 10px;
-  padding: 0 10px; }
+  padding: 0 10px;
+  font-weight: 700; }
 
 .form-title-detail {
   color: #a6a6a6;
@@ -2318,14 +2329,38 @@ body {
     text-align: center; }
   .counter .minus {
     border: 1px solid #c6c6c6;
-    border-radius: 3px 0 0 3px; }
+    border-radius: 3px 0 0 3px;
+    font-size: 24px;
+    line-height: 20px; }
+    .counter .minus.active {
+      background-color: #f7f7f7;
+      cursor: pointer; }
+      .counter .minus.active .circle {
+        border-color: #000; }
+    .counter .minus.disabled {
+      cursor: default;
+      color: #c6c6c6; }
+      .counter .minus.disabled .circle {
+        border-color: #c6c6c6; }
   .counter .result-count {
     border-top: 1px solid #c6c6c6;
     border-bottom: 1px solid #c6c6c6;
     line-height: 35px; }
   .counter .plus {
     border: 1px solid #c6c6c6;
-    border-radius: 0 3px 3px 0; }
+    border-radius: 0 3px 3px 0;
+    font-size: 24px;
+    line-height: 22px; }
+    .counter .plus.active {
+      background-color: #f7f7f7;
+      cursor: pointer; }
+      .counter .plus.active .circle {
+        border-color: #000; }
+    .counter .plus.disabled {
+      color: #c6c6c6;
+      cursor: default; }
+      .counter .plus.disabled .circle {
+        border-color: #c6c6c6; }
   .counter .circle {
     border-radius: 50%;
     border: 1px solid #c6c6c6;
@@ -2335,9 +2370,16 @@ body {
     vertical-align: top;
     *display: inline;
     *zoom: 1;
-    margin-top: 4px;
-    line-height: 24px;
-    cursor: pointer; }
+    margin-top: 4px; }
+
+.guest-block {
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 0 10px; }
+
+.guest-field {
+  padding: 0 10px;
+  margin-bottom: 10px; }
 
 .block-info-buyer {
   border: 1px solid #c6c6c6;
@@ -2499,12 +2541,24 @@ body {
     display: block;
     float: left; }
     .main-tab-item:first-child {
-      width: 34%; }
+      width: 34%;
+      border-radius: 0 0 3px 3px; }
+    .main-tab-item:last-child {
+      border-radius: 0 3px 3px 0; }
+
+  .order-tab,
+  .main-tab-content {
+    margin-left: 15px !important;
+    margin-right: 15px !important; }
 
   .order-page .main-tab-item span:first-child {
     display: none; }
   .order-page .main-tab-item ._mobile {
     display: block; }
+
+  .main-tab-content {
+    padding-left: 10px !important;
+    padding-right: 10px !important; }
 
   .main-pic {
     overflow: hidden; }
@@ -2564,13 +2618,16 @@ body {
     height: auto; }
 
   .btn-back {
-    margin-bottom: 10px; } }
+    margin-bottom: 10px; }
+
+  .form-column.check-result {
+    display: none; } }
 @media screen and (max-width: 560px) {
   .order-page .main-tab-content {
-    margin: 0; }
+    margin: 0 !important; }
 
   .order-tab {
-    margin: 20px 0 0; }
+    margin: 20px 0 0 !important; }
 
   .order-tab {
     padding-left: 10px; }
@@ -2597,7 +2654,10 @@ body {
     float: none;
     padding: 5px;
     border: 1px solid #dadada;
-    border-radius: 3px; } }
+    border-radius: 3px; }
+
+  .component-checkbox.agreement label {
+    line-height: 20px; } }
 @media screen and (max-width: 460px) {
   .ui-datepicker {
     width: 301px; }

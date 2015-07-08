@@ -114,6 +114,10 @@ body {
     font-family: 'Oxygen',sans-serif;
     margin: 5px 0;
 
+    &.vip-add {
+        margin: 5px 10px;
+    }
+
     input {
         left: 0;
         position: absolute;
@@ -147,9 +151,11 @@ body {
     }
     label {
         cursor: default;
-        display: block;
+        display: inline-block;
+        vertical-align: top;
         line-height: 42px;
     }
+
 }
 
 .component-select {
@@ -231,6 +237,7 @@ body {
     line-height: 36px;
     border-radius: 3px;
     box-shadow: none;
+    font-weight: 700;
 }
 
 .btn-login {

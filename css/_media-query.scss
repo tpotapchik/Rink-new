@@ -95,7 +95,10 @@
         display: block;
     }
     .footer {
-        display: none;
+        //.item:last-child {
+            display: none;
+
+        //}
     }
     .footer-mobile {
         display: block;

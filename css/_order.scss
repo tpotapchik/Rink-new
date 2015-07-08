@@ -52,8 +52,26 @@
     padding: 0 15px;
     font-size: 14px;
 
+    &:last-child {
+        span:after {
+            background: 0 none;
+        }
+    }
+
     span {
         display: block;
+        position: relative;
+
+        &:after {
+            content: '';
+            position: absolute;
+            height: 12px;
+            width: 2px;
+            background-color: #ecf0b5;
+            top: 14px;
+            right: -15px;
+        }
+
     }
 
 
@@ -64,10 +82,18 @@
 
         span {
             border-bottom: 5px solid $clr_orange;
+
+            &:after {
+                background: 0 none;
+            }
         }
     }
     &.previous {
         background: #fff;
+
+        span:after {
+            background: 0 none;
+        }
     }
 }
 

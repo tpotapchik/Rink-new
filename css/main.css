@@ -678,7 +678,7 @@ a {
 
 .ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
   position: absolute;
-  width: 59px;
+  width: 60px;
   height: 39px;
   cursor: pointer; }
   .ui-datepicker .ui-datepicker-prev:hover, .ui-datepicker .ui-datepicker-next:hover {
@@ -686,7 +686,7 @@ a {
 
 .ui-datepicker .ui-datepicker-prev {
   border-right: 1px solid #a6b226;
-  width: 60px; }
+  width: 59px; }
 
 .ui-datepicker .ui-datepicker-next {
   right: 0;
@@ -730,7 +730,12 @@ a {
 
 .ui-datepicker td {
   border: 0;
-  padding: 0; }
+  padding: 0;
+  background: #f1f2f3;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff; }
+  .ui-datepicker td:last-child {
+    border-right: none; }
 
 .ui-datepicker td span, .ui-datepicker td a {
   display: block;
@@ -847,8 +852,6 @@ a {
   color: #222; }
 
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
-  border-right: 1px solid #fff;
-  border-bottom: 1px solid #fff;
   background: #f1f2f3;
   font-weight: normal; }
 
@@ -884,11 +887,6 @@ a {
   opacity: .7;
   filter: Alpha(Opacity=70);
   font-weight: normal; }
-
-.ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled {
-  opacity: .35;
-  filter: Alpha(Opacity=35);
-  background-image: none; }
 
 .ui-state-disabled .ui-icon {
   filter: Alpha(Opacity=35); }
@@ -2079,16 +2077,31 @@ body {
   line-height: 40px;
   padding: 0 15px;
   font-size: 14px; }
+  .order-step:last-child span:after {
+    background: 0 none; }
   .order-step span {
-    display: block; }
+    display: block;
+    position: relative; }
+    .order-step span:after {
+      content: '';
+      position: absolute;
+      height: 12px;
+      width: 2px;
+      background-color: #ecf0b5;
+      top: 14px;
+      right: -15px; }
   .order-step.active {
     border-bottom: 5px solid #fff;
     background-color: #fff;
     height: 40px; }
     .order-step.active span {
       border-bottom: 5px solid #f58c42; }
+      .order-step.active span:after {
+        background: 0 none; }
   .order-step.previous {
     background: #fff; }
+    .order-step.previous span:after {
+      background: 0 none; }
 
 .form-column {
   width: 48%;

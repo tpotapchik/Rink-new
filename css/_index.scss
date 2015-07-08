@@ -186,6 +186,7 @@
     width: 353px;
     @include inblock;
     cursor: pointer;
+    @include box-sizing;
 
     &:hover {
         background-color: #f0f694;
@@ -208,11 +209,17 @@
             color: #fff;
         }
     }
+    &.info {
+        border-left: 0!important;
+        border-right: 0!important;
+    }
 
     .order-page & {
         background-color: #fff;
         color: #000;
         font-size: 20px;
+        border:1px solid #dadada;
+
 
         &:first-child {
             border-radius: 0 0 0 5px;

@@ -1828,7 +1828,10 @@ body {
   vertical-align: top;
   *display: inline;
   *zoom: 1;
-  cursor: pointer; }
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
   .main-tab-item:hover {
     background-color: #f0f694; }
     .order-page .main-tab-item:hover {
@@ -1841,10 +1844,14 @@ body {
     .order-page .main-tab-item.selected {
       background-color: #f58c42;
       color: #fff; }
+  .main-tab-item.info {
+    border-left: 0 !important;
+    border-right: 0 !important; }
   .order-page .main-tab-item {
     background-color: #fff;
     color: #000;
-    font-size: 20px; }
+    font-size: 20px;
+    border: 1px solid #dadada; }
     .order-page .main-tab-item:first-child {
       border-radius: 0 0 0 5px; }
     .order-page .main-tab-item:last-child {
@@ -2488,7 +2495,11 @@ body {
     padding-bottom: 60px; }
 
   .main-tab-item {
-    width: 32%; }
+    width: 33%;
+    display: block;
+    float: left; }
+    .main-tab-item:first-child {
+      width: 34%; }
 
   .order-page .main-tab-item span:first-child {
     display: none; }
@@ -2568,8 +2579,14 @@ body {
     padding-left: 10px !important;
     padding-right: 10px !important; }
 
+  .main-tab-item-wrapper {
+    line-height: 42px; }
+
   .main-tab-item {
-    font-size: 14px !important; }
+    font-size: 14px !important;
+    line-height: 42px;
+    height: 42px;
+    font-weight: 600; }
 
   .main-pic-title {
     font-size: 16px; }
@@ -2577,7 +2594,10 @@ body {
   .reservation-item {
     width: 100%;
     margin: 5px auto !important;
-    float: none; } }
+    float: none;
+    padding: 5px;
+    border: 1px solid #dadada;
+    border-radius: 3px; } }
 @media screen and (max-width: 460px) {
   .ui-datepicker {
     width: 301px; }

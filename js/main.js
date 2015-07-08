@@ -68,6 +68,33 @@ $(function () {
         }, 400)
     });
 
+    function resizeReservText(){
+        var maxHeight = 0;
+        var $item = $('.reservation-item ._description');
+        $item.each(function(){
+            $(this).height('auto');
+            var $h = $(this).height();
+            if ($h > maxHeight) {
+                maxHeight = $h;
+            }
+        });
+        $item.each(function(){
+            var $h = $(this).height();
+            if ($h < maxHeight) {
+                $(this).height(maxHeight);
+            }
+        });
+    }
+    $('.main-tab-item.reserv').click(function() {
+        resizeReservText();
+    });
+    $(window).resize(function(){
+        resizeReservText();
+    });
+
+
+
+
 
     //
     //$('.more-btn').click(function () {

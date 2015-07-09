@@ -53,11 +53,10 @@ $(function () {
         inline: true
     });
     $('.mobile-menu').click(function(){
-        $('.mobile-menu-block').fadeIn(400);
+        $('.fade').toggle();
+        $('.navigation').toggle();
     });
-    $('.icon-close').click(function(){
-        $('.mobile-menu-block').fadeOut(400);
-    });
+
     $('.questions').click(function () {
         var tab_faq = $('.main-tab-item.faq');
         tab_faq.click();

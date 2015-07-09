@@ -74,7 +74,7 @@ hr {
 
 mark {
   background: #ff0;
-  color: #000; }
+  color: black; }
 
 p, pre {
   margin: 1em 0; }
@@ -418,11 +418,11 @@ a {
   height: 1%;
   border: 1px solid #aaa;
   background-color: #fff;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(1%, #eeeeee), color-stop(15%, #ffffff));
-  background-image: -webkit-linear-gradient(#eeeeee 1%, #ffffff 15%);
-  background-image: -moz-linear-gradient(#eeeeee 1%, #ffffff 15%);
-  background-image: -o-linear-gradient(#eeeeee 1%, #ffffff 15%);
-  background-image: linear-gradient(#eeeeee 1%, #ffffff 15%);
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(1%, #eeeeee), color-stop(15%, white));
+  background-image: -webkit-linear-gradient(#eeeeee 1%, white 15%);
+  background-image: -moz-linear-gradient(#eeeeee 1%, white 15%);
+  background-image: -o-linear-gradient(#eeeeee 1%, white 15%);
+  background-image: linear-gradient(#eeeeee 1%, white 15%);
   cursor: text; }
 
 .chosen-container-multi .chosen-choices li {
@@ -843,18 +843,18 @@ a {
 
 .ui-widget-content {
   border: 1px solid #aaa;
-  background: #fff url("images/ui-bg_flat_75_ffffff_40x100.png") 50% 50% repeat-x;
-  color: #222; }
+  background: white url("images/ui-bg_flat_75_ffffff_40x100.png") 50% 50% repeat-x;
+  color: #222222; }
 
 .ui-widget-content a {
-  color: #222; }
+  color: #222222; }
 
 .ui-widget-header {
   background: #dce374;
   font-weight: bold; }
 
 .ui-widget-header a {
-  color: #222; }
+  color: #222222; }
 
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
   background: #f1f2f3;
@@ -1447,14 +1447,14 @@ a {
   background-position: -80px -224px; }
 
 .ui-widget-overlay {
-  background: #aaa url("images/ui-bg_flat_0_aaaaaa_40x100.png") 50% 50% repeat-x;
+  background: #aaaaaa url("images/ui-bg_flat_0_aaaaaa_40x100.png") 50% 50% repeat-x;
   opacity: .3;
   filter: Alpha(Opacity=30); }
 
 .ui-widget-shadow {
   margin: -8px 0 0 -8px;
   padding: 8px;
-  background: #aaa url("images/ui-bg_flat_0_aaaaaa_40x100.png") 50% 50% repeat-x;
+  background: #aaaaaa url("images/ui-bg_flat_0_aaaaaa_40x100.png") 50% 50% repeat-x;
   opacity: .3;
   filter: Alpha(Opacity=30);
   border-radius: 8px; }
@@ -1470,7 +1470,7 @@ body,
 body {
   background-color: #fff;
   font: 300 62.5%/1.19 'Oxygen', Arial, Helvetica, sans-serif;
-  color: #000;
+  color: black;
   min-width: 320px; }
   body > .page {
     height: auto;
@@ -2762,5 +2762,3 @@ body {
 
   .answer-block {
     margin-left: 20px; } }
-
-/*# sourceMappingURL=main.css.map */

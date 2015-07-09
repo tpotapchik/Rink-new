@@ -1846,6 +1846,7 @@ body {
   font-size: 2.4em;
   background-color: #dce374;
   width: 355px;
+  font-weight: 700;
   display: inline-block;
   vertical-align: top;
   *display: inline;
@@ -2531,7 +2532,7 @@ body {
   h2,
   h3 {
     page-break-after: avoid; } }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .mobile-menu-block {
     display: none !important; }
 

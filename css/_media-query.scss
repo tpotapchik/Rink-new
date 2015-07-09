@@ -298,6 +298,11 @@
         padding: 5px;
         border:1px solid #dadada;
         border-radius: 3px;
+        @include box-sizing;
+
+        ._bg-pic {
+            width: auto;
+        }
         &:first-child {
             margin-top: 0!important;
         }

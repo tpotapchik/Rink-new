@@ -1818,7 +1818,7 @@ body {
     background-size: cover;
     height: 470px; }
   .main-pic.index-page ._bg {
-    background: url("../img/main-pic.jpg") no-repeat 50% 50%; }
+    background: url("../img/bg.jpg") no-repeat 50% 50%; }
 
 .main-pic-title {
   position: absolute;
@@ -2520,7 +2520,10 @@ body {
     display: none !important; }
 
   .fade {
-    display: none !important; } }
+    display: none !important; }
+
+  .navigation {
+    display: block !important; } }
 @media screen and (max-width: 1100px) {
   .main-tab-item {
     width: 32%; } }

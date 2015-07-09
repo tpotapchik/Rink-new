@@ -57,7 +57,7 @@ $(function () {
         $('.navigation').toggle();
     });
 
-    $('.questions').click(function () {
+    $('.questions,.nav-link.faq').click(function () {
         var tab_faq = $('.main-tab-item.faq');
         tab_faq.click();
         var _offset = tab_faq.offset().top;
@@ -66,7 +66,7 @@ $(function () {
             'scrollTop': _offset
         }, 400)
     });
-    $('.buy-tickets,.reserve-tickets').click(function () {
+    $('.buy-tickets,.reserve-tickets, .nav-link.tickets').click(function () {
         var tab_faq = $('.main-tab-item.reserv');
         tab_faq.click();
         var _offset = tab_faq.offset().top;

@@ -2653,7 +2653,7 @@ body {
     width: 49%;
     margin-left: 0; }
     .reservation-item:nth-child(2n-1) {
-      margin-right: 1%; }
+      margin-right: 2%; }
 
   .order-navigation {
     max-height: 45px; }
@@ -2706,11 +2706,13 @@ body {
 
   .reservation-item {
     width: 100%;
-    margin: 5px auto !important;
+    margin: 15px auto !important;
     float: none;
     padding: 5px;
     border: 1px solid #dadada;
     border-radius: 3px; }
+    .reservation-item:first-child {
+      margin-top: 0 !important; }
 
   .component-checkbox.agreement label {
     line-height: 20px; }

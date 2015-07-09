@@ -66,7 +66,7 @@ $(function () {
             'scrollTop': _offset
         }, 400)
     });
-    $('.buy-tickets').click(function () {
+    $('.buy-tickets,.reserve-tickets').click(function () {
         var tab_faq = $('.main-tab-item.reserv');
         tab_faq.click();
         var _offset = tab_faq.offset().top;

@@ -2548,13 +2548,18 @@ body {
   .mobile-menu {
     display: block; }
 
-  .footer {
+  .footer .item.link {
+    display: none; }
+  .footer .item {
+    padding: 0 60px; }
+
+  .orderPages .footer {
     display: none; }
 
-  .footer-mobile {
+  .orderPages .footer-mobile {
     display: block; }
 
-  .page_i {
+  .orderPages .page_i {
     padding-bottom: 60px; }
 
   .main-tab-item {
@@ -2569,8 +2574,8 @@ body {
 
   .order-tab,
   .main-tab-content {
-    margin-left: 15px !important;
-    margin-right: 15px !important; }
+    margin-left: 0 !important;
+    margin-right: 0 !important; }
 
   .order-page .main-tab-item span:first-child {
     display: none; }
@@ -2661,20 +2666,28 @@ body {
     margin-bottom: 10px; }
 
   .form-column.check-result {
-    display: none; } }
-@media screen and (max-width: 560px) {
-  .order-page .main-tab-content {
-    margin: 0 !important; }
+    display: none; }
 
+  .footer-logo img {
+    width: 200px; }
+
+  .footer .item {
+    padding: 0 10px;
+    display: inline-block;
+    vertical-align: top;
+    *display: inline;
+    *zoom: 1;
+    float: none; }
+  .footer .centralize {
+    text-align: center; }
+    .footer .centralize .item.link {
+      text-align: left; } }
+@media screen and (max-width: 560px) {
   .order-tab {
     margin: 20px 0 0 !important; }
 
   .order-tab {
     padding-left: 10px; }
-
-  .main-tab-content {
-    padding-left: 10px !important;
-    padding-right: 10px !important; }
 
   .main-tab-item-wrapper {
     line-height: 42px; }
@@ -2697,7 +2710,15 @@ body {
     border-radius: 3px; }
 
   .component-checkbox.agreement label {
-    line-height: 20px; } }
+    line-height: 20px; }
+
+  .footer-logo img {
+    width: 100px; }
+
+  .footer .item {
+    font-size: 12px; }
+    .footer .item:first-child {
+      padding: 0; } }
 @media screen and (max-width: 460px) {
   .ui-datepicker {
     width: 301px; }
@@ -2713,6 +2734,12 @@ body {
 
   .sign-in-fb {
     float: none;
-    margin-top: 10px; } }
+    margin-top: 10px; }
+
+  .reserve-tickets img {
+    width: 250px; }
+
+  .answer-block {
+    margin-left: 20px; } }
 
 /*# sourceMappingURL=main.css.map */

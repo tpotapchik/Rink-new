@@ -457,3 +457,18 @@
     padding: 3px 5px;
     margin-bottom: 5px;
 }
+.quantity-check {
+    padding-right: 20px;
+    position: relative;
+
+    ._ico {
+        @include bg(-30px,-68px);
+        @include inblock;
+        position: absolute;
+        right: 0;
+        top:3px;
+        width: 14px;
+        height: 14px;
+        cursor: pointer;
+    }
+}

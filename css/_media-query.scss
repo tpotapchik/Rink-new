@@ -271,6 +271,19 @@
         }
     }
 }
+@media screen and (max-width: 667px){
+    .reservation-item {
+        padding: 5px;
+        border:1px solid #dadada;
+        border-radius: 3px;
+        @include box-sizing;
+
+        ._bg-pic {
+            width: auto;
+        }
+    }
+
+}
 @media screen and (max-width: 560px) {
     .order-tab {
         margin: 20px 0 0!important;
@@ -295,14 +308,7 @@
         width: 100%;
         margin: 15px auto!important;
         float: none;
-        padding: 5px;
-        border:1px solid #dadada;
-        border-radius: 3px;
-        @include box-sizing;
 
-        ._bg-pic {
-            width: auto;
-        }
         &:first-child {
             margin-top: 0!important;
         }

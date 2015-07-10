@@ -1963,7 +1963,8 @@ body {
     height: 37px;
     max-height: 37px;
     padding: 5px 10px;
-    overflow: hidden; }
+    overflow: hidden;
+    line-height: 20px; }
   .reservation-item ._description {
     background-color: #eff3f6;
     padding: 5px 10px; }
@@ -2704,6 +2705,16 @@ body {
     text-align: center; }
     .footer .centralize .item.link {
       text-align: left; } }
+@media screen and (max-width: 667px) {
+  .reservation-item {
+    padding: 5px;
+    border: 1px solid #dadada;
+    border-radius: 3px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+    .reservation-item ._bg-pic {
+      width: auto; } }
 @media screen and (max-width: 560px) {
   .order-tab {
     margin: 20px 0 0 !important; }
@@ -2726,15 +2737,7 @@ body {
   .reservation-item {
     width: 100%;
     margin: 15px auto !important;
-    float: none;
-    padding: 5px;
-    border: 1px solid #dadada;
-    border-radius: 3px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box; }
-    .reservation-item ._bg-pic {
-      width: auto; }
+    float: none; }
     .reservation-item:first-child {
       margin-top: 0 !important; }
 

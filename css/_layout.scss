@@ -159,6 +159,7 @@ body {
 }
 
 .component-select {
+    background-color: #fff;
     border: 1px solid #cccccc;
     border-radius: 3px;
     padding: 0 10px;
@@ -196,6 +197,7 @@ body {
         }
     }
     .chosen-drop {
+        line-height: 42px;
         border:1px solid #cccccc;
         border-top: 0;
         background-color: #fff;

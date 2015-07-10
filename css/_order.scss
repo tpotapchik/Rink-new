@@ -137,6 +137,30 @@
         }
     }
 }
+.form-block.fancybox {
+    display: none;
+    width: 450px!important;
+    font-size: 14px;
+
+    .form-title-detail {
+        line-height: 30px;
+    }
+}
+.fancybox-inner{
+    width: 480px!important;
+    height: 650px;
+}
+.fancybox-close {
+    background: url("../img/sprite.png") no-repeat scroll -30px -68px transparent;
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    right: 11px;
+    top: 18px;
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+}
 
 .form-block {
     ~ .form-block {

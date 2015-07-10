@@ -60,6 +60,9 @@ $(function () {
         $(this).closest('.question-answer').find('.answer-block').slideToggle(200);
     });
 
+    $(".popup").fancybox();
+
+
     $('.questions,.nav-link.faq').click(function () {
         var tab_faq = $('.main-tab-item.faq');
         tab_faq.click();

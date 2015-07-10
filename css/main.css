@@ -1581,7 +1581,6 @@ body {
   border: 1px solid #cccccc;
   border-radius: 3px;
   padding: 0 10px;
-  line-height: 42px;
   margin-bottom: 5px;
   width: 100%;
   -webkit-box-sizing: border-box;
@@ -1589,8 +1588,8 @@ body {
   box-sizing: border-box;
   font-family: 'Oxygen', Arial, Helvetica, sans-serif; }
   .component-select .chosen-single {
-    height: 42px;
-    line-height: 42px;
+    height: 40px;
+    line-height: 40px;
     color: #979797; }
     .component-select .chosen-single span {
       margin-right: 29px; }
@@ -1609,7 +1608,8 @@ body {
     border: 1px solid #cccccc;
     border-top: 0;
     background-color: #fff;
-    margin-top: -1px; }
+    margin-top: -1px;
+    font-weight: 400; }
   .component-select .chosen-results li {
     padding: 0 15px; }
     .component-select .chosen-results li:hover {

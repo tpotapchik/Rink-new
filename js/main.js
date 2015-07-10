@@ -64,7 +64,6 @@ $(function () {
     var isShowInPopup = document.body.clientWidth >= 944;
 
     $(".popup").click(function () {
-        console.log(document.body.clientWidth);
         if (isShowInPopup) {
             $.fancybox({
                 href:'#popup'

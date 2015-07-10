@@ -49,12 +49,15 @@ $(function () {
         inherit_select_classes: true,
         width: "75px"
     });
-    $( "#datepicker" ).datepicker({
+    $("#datepicker").datepicker({
         inline: true
     });
     $('.mobile-menu').click(function(){
         $('.fade').toggle();
         $('.navigation').toggle();
+    });
+    $('.question-block').click(function(){
+        $(this).closest('.question-answer').find('.answer-block').slideToggle(200);
     });
 
     $('.questions,.nav-link.faq').click(function () {

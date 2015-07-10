@@ -299,10 +299,12 @@
 
 .question-block {
     font-weight: 700;
+    cursor: pointer;
 
 }
 
 .answer-block {
+    display: none;
     margin-left: 50px;
 }
 

@@ -1862,7 +1862,8 @@ body {
   .main-tab-item:hover {
     background-color: #f0f694; }
     .order-page .main-tab-item:hover {
-      background-color: #f58c42; }
+      background-color: #dce374;
+      color: #ffffff; }
   .main-tab-item ._mobile {
     display: none; }
   .main-tab-item.selected {
@@ -1931,16 +1932,23 @@ body {
 .reservation-item {
   width: 32%;
   margin-left: 2%;
-  max-width: 340px;
+  float: left;
+  font-size: 14px;
+  line-height: 18px;
   margin-bottom: 30px;
   overflow: hidden;
-  float: left;
-  line-height: 18px;
-  font-size: 14px; }
+  max-width: 340px;
+  padding: 5px;
+  border: 1px solid #dadada;
+  border-radius: 3px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  box-shadow: 0 0 4px 1px #dadada; }
   .reservation-item:nth-child(3n+1) {
     margin-left: 0; }
   .reservation-item ._bg-pic {
-    width: 340px;
+    width: auto;
     height: 190px; }
     .reservation-item ._bg-pic.item1 {
       background: url("../img/temp/item3.jpg") no-repeat 50% 50%;
@@ -2713,16 +2721,9 @@ body {
     text-align: center; }
     .footer .centralize .item.link {
       text-align: left; } }
-@media screen and (max-width: 667px) {
-  .reservation-item {
-    padding: 5px;
-    border: 1px solid #dadada;
-    border-radius: 3px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box; }
-    .reservation-item ._bg-pic {
-      width: auto; } }
+@media screen and (max-width: 568px) {
+  .main-tab-item {
+    font-size: 20px; } }
 @media screen and (max-width: 560px) {
   .order-tab {
     margin: 20px 0 0 !important; }

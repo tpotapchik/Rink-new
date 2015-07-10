@@ -213,7 +213,8 @@
         background-color: #f0f694;
 
         .order-page & {
-            background-color: $clr_orange;
+            background-color: $bg_green;
+            color: #ffffff;
         }
     }
     ._mobile {
@@ -317,23 +318,24 @@
 .reservation-item {
     width: 32%;
     margin-left: 2%;
-    max-width: 340px;
+    float: left;
+    font-size: 14px;
+    line-height: 18px;
     margin-bottom: 30px;
     overflow: hidden;
-
-    //width: 340px;
-    //margin-left: 15px;
-    float: left;
-    line-height: 18px;
-    font-size: 14px;
+    max-width: 340px;
+    padding: 5px;
+    border:1px solid #dadada;
+    border-radius: 3px;
+    @include box-sizing;
+    box-shadow: 0 0 4px 1px #dadada;
 
     &:nth-child(3n+1) {
         margin-left: 0;
     }
 
     ._bg-pic {
-
-        width: 340px;
+        width: auto;
         height: 190px;
 
         &.item1 {

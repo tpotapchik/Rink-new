@@ -193,9 +193,6 @@
         }
     }
 
-
-
-
     .ui-datepicker {
         width: 380px;
     }
@@ -233,8 +230,6 @@
         &:nth-child(2n-1) {
             margin-right: 2%;
         }
-
-
     }
     .order-navigation {
         max-height: 45px;
@@ -271,19 +266,12 @@
         }
     }
 }
-@media screen and (max-width: 667px){
-    .reservation-item {
-        padding: 5px;
-        border:1px solid #dadada;
-        border-radius: 3px;
-        @include box-sizing;
-
-        ._bg-pic {
-            width: auto;
-        }
+@media screen and (max-width: 568px) {
+    .main-tab-item {
+        font-size: 20px;
     }
-
 }
+
 @media screen and (max-width: 560px) {
     .order-tab {
         margin: 20px 0 0!important;
@@ -337,7 +325,6 @@
     .ui-datepicker td span, .ui-datepicker td a {
         width: 42px;
     }
-
 }
 @media screen and (max-width: 400px) {
     .btn-reserve {

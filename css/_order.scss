@@ -148,7 +148,7 @@
 }
 .fancybox-inner{
     width: 480px!important;
-    height: 650px;
+    height: 660px;
 }
 .fancybox-close {
     background: url("../img/sprite.png") no-repeat scroll -30px -68px transparent;
@@ -165,6 +165,9 @@
 .form-block {
     ~ .form-block {
         margin-top: 30px;
+    }
+    &.popup-registration {
+        display: none;
     }
 }
 

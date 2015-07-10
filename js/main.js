@@ -4,10 +4,10 @@ $(function () {
             $(this).val("");
         }
     }).blur(function () {
-                if ($(this).val() == "") {
-                    $(this).val($(this).attr("title"));
-                }
-            });
+        if ($(this).val() == "") {
+            $(this).val($(this).attr("title"));
+        }
+    });
 
 
     var $tabItem = $('.main-tab-item');
@@ -52,15 +52,36 @@ $(function () {
     $("#datepicker").datepicker({
         inline: true
     });
-    $('.mobile-menu').click(function(){
+    $('.mobile-menu').click(function () {
         $('.fade').toggle();
         $('.navigation').toggle();
     });
-    $('.question-block').click(function(){
+    $('.question-block').click(function () {
         $(this).closest('.question-answer').find('.answer-block').slideToggle(200);
     });
 
-    $(".popup").fancybox();
+
+    var isShowInPopup = document.body.clientWidth >= 944;
+
+    $(".popup").click(function () {
+        console.log(document.body.clientWidth);
+        if (isShowInPopup) {
+            $.fancybox({
+                href:'#popup'
+            });
+        } else {
+            var _offset = $('.form-block.popup-registration').offset().top;
+            $('body,html').animate({scrollTop: _offset}, 400)
+        }
+    });
+
+    $(window).resize(function () {
+        isShowInPopup = document.body.clientWidth >= 944;
+        if(!isShowInPopup){
+            $.fancybox.close();//закроет любой открытый в текущий момент попап
+        }
+        resizeReservText();
+    });
 
 
     $('.questions,.nav-link.faq').click(function () {
@@ -91,32 +112,27 @@ $(function () {
         }, 400)
     });
 
-    function resizeReservText(){
+    function resizeReservText() {
         var maxHeight = 0;
         var $item = $('.reservation-item ._description');
-        $item.each(function(){
+        $item.each(function () {
             $(this).height('auto');
             var $h = $(this).height();
             if ($h > maxHeight) {
                 maxHeight = $h;
             }
         });
-        $item.each(function(){
+        $item.each(function () {
             var $h = $(this).height();
             if ($h < maxHeight) {
                 $(this).height(maxHeight);
             }
         });
     }
-    $('.main-tab-item.reserv').click(function() {
+
+    $('.main-tab-item.reserv').click(function () {
         resizeReservText();
     });
-    $(window).resize(function(){
-        resizeReservText();
-    });
-
-
-
 
 
     //
@@ -154,8 +170,6 @@ $(function () {
     //});
     //
     //$(".popup").fancybox();
-
-
 
 
 });

@@ -108,6 +108,16 @@
                                     <a href="#popup" class="popup left text-link">Click Here to Create an Account!</a>
                                     <a href="#" class="right text-link">Forgot Password?</a>
                                 </div>
+                                <div id="forgotPass" class="" style="/* width: 98%; */">
+                                    <form action="/order/ForgotPassword/NewPassword" class="form-block" data-ajax="true" data-ajax-method="POST" data-ajax-mode="replace" data-ajax-success="onSuccess" data-ajax-update="#forgotPass" id="form2" method="post" style=" margin-top: 20px;" novalidate="novalidate">    <div class="form-title">Forgot your password?</div>
+                                        <p>
+                                        </p><p>Forgot your password? No problem! Just simply enter your login name and click "Retrieve  password." New login details will be emailed to you.</p>
+                                        <p></p>
+                                        <input data-val="true" data-val-remote="'Email' is invalid." data-val-remote-additionalfields="*.Email" data-val-remote-type="POST" data-val-remote-url="/order/ForgotPassword/IsEmailExist" id="Email" name="Email" placeholder="Email *" style="width: 98%; height: 42px;" type="text" value="" class="input"><span class="field-validation-valid" data-valmsg-for="Email" data-valmsg-replace="true"></span>    <div class="btn-group-form">
+                                            <input type="submit" class="btn btn-login" value="Send Password">
+                                        </div>
+                                    </form>
+                                </div>
 
                             </div>
                             <div class="form-column">

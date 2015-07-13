@@ -90,20 +90,24 @@
                                     <input type="password" placeholder="Password" class="input"/>
                                     <div class="btn-group-form">
                                         <button type="submit" class="btn btn-login">Sign in</button>
-
-                                        <div id="FbLoginResult" class="sign-in-fb">
-                                            <div id="auth-status">
-                                                <div id="auth-loggedout">
-                                                    <a href="#" id="lgtoFB"></a></div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                    <div class="clearfix">
-                                        <a href="#popup" class="popup left text-link">Click Here to Create an Account!</a>
-                                        <a href="#" class="right text-link">Forgot Password?</a>
                                     </div>
                                 </form>
+
+                                <div id="FbLoginResult">
+                                    <div id="auth-status">
+                                        <div id="auth-loggedout"  class="sign-in-fb">
+                                            <a href="#" id="lgtoFB"></a>
+                                        </div>
+                                        <div id="auth-loggedin"  class="sign-in-fb"  style="display: none;">
+                                            <a href="#" id="lgtoFBI"></a>
+                                            <a href="#" id="auth-logoutlinkmobile" style=" /*display: none; */">logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clearfix marg">
+                                    <a href="#popup" class="popup left text-link">Click Here to Create an Account!</a>
+                                    <a href="#" class="right text-link">Forgot Password?</a>
+                                </div>
 
                             </div>
                             <div class="form-column">

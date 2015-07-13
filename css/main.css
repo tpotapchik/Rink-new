@@ -2460,12 +2460,7 @@ body {
   margin: 15px 0 35px; }
 
 .sign-in-fb {
-  display: inline-block;
-  vertical-align: top;
-  *display: inline;
-  *zoom: 1;
-  background: url("../img/facebook.jpg") no-repeat scroll 0 0 transparent;
-  float: right; }
+  background: url("../img/facebook.jpg") no-repeat scroll 0 0 transparent; }
   .sign-in-fb a {
     display: inline-block;
     vertical-align: top;
@@ -2473,6 +2468,9 @@ body {
     *zoom: 1;
     width: 224px;
     height: 37px; }
+
+.marg {
+  margin: 30px 0; }
 
 .text-link {
   font-size: 14px; }

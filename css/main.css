@@ -2881,10 +2881,19 @@ body {
     height: 45px;
     background-size: cover;
     margin-top: 0;
-    margin-left: 125px; }
+    margin-left: 0;
+    margin-right: 90px;
+    display: inline-block;
+    float: none; }
 
   .right-block {
-    margin-right: 0; }
+    margin-right: 0;
+    position: absolute;
+    top: 0;
+    right: 0; }
+
+  .header .centralize {
+    text-align: center; }
 
   .navigation {
     display: none;
@@ -2900,13 +2909,15 @@ body {
       font-size: 14px;
       display: block;
       float: none;
-      padding: 0 50px;
+      padding: 0 90px 0 50px;
       line-height: 50px;
-      margin: 0; }
+      margin: 0;
+      border-bottom: 1px solid #dce374; }
       .navigation .nav-link:hover, .navigation .nav-link.active {
         border-bottom: none;
         background-color: #dce374;
-        color: #fff; }
+        color: #fff;
+        border-bottom: 1px solid #dce374; }
 
   .ui-datepicker {
     width: 380px; }
@@ -3021,17 +3032,14 @@ body {
   .btn-reserve {
     padding: 0 10px; }
 
-  .logo {
-    margin-left: 46px; }
-
-  .sign-in-fb {
-    float: none;
-    margin-top: 10px; }
-
   .reserve-tickets img {
     width: 250px; }
 
   .answer-block {
     margin-left: 20px; } }
+@media screen and (max-width: 320px) {
+  .sign-in-fb {
+    float: none;
+    margin-top: 10px; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -2464,10 +2464,15 @@ body {
   vertical-align: top;
   *display: inline;
   *zoom: 1;
-  width: 224px;
-  height: 37px;
   background: url("../img/facebook.jpg") no-repeat scroll 0 0 transparent;
   float: right; }
+  .sign-in-fb a {
+    display: inline-block;
+    vertical-align: top;
+    *display: inline;
+    *zoom: 1;
+    width: 224px;
+    height: 37px; }
 
 .text-link {
   font-size: 14px; }

@@ -218,10 +218,14 @@
 
 .sign-in-fb {
     @include inblock;
-    width: 224px;
-    height: 37px;
     @include bg(0, 0, "facebook.jpg");
     float: right;
+    
+    a {
+        @include inblock;
+        width: 224px;
+        height: 37px;
+    }
 }
 
 .text-link {

@@ -2393,13 +2393,17 @@ body {
 
 .form-block.fancybox {
   display: none;
-  width: 450px !important;
-  font-size: 14px; }
+  font-size: 14px;
+  padding: 0 15px 15px 15px; }
   .form-block.fancybox .form-title-detail {
     line-height: 30px; }
+  .form-block.fancybox .form-title {
+    padding-right: 25px; }
+
+.fancybox-skin {
+  padding: 25px 0 0 0 !important; }
 
 .fancybox-inner {
-  width: 480px !important;
   height: 660px; }
 
 .fancybox-close {
@@ -2407,16 +2411,14 @@ body {
   display: inline-block;
   vertical-align: top;
   position: absolute;
-  right: 11px;
-  top: 18px;
+  right: 19px;
+  top: 10px;
   width: 14px;
   height: 14px;
   cursor: pointer; }
 
 .form-block ~ .form-block {
   margin-top: 30px; }
-.form-block.popup-registration {
-  display: none; }
 
 .form-title {
   font-size: 18px;
@@ -2942,10 +2944,7 @@ body {
   .form-column {
     width: 100%;
     margin: auto;
-    float: none; }
-
-  .form-block.popup-registration {
-    display: block; } }
+    float: none; } }
 @media screen and (max-width: 768px) {
   .reservation-item {
     width: 49%;

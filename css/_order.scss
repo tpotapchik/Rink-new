@@ -139,15 +139,20 @@
 }
 .form-block.fancybox {
     display: none;
-    width: 450px!important;
     font-size: 14px;
+    padding: 0 15px 15px 15px;
 
     .form-title-detail {
         line-height: 30px;
     }
+    .form-title {
+        padding-right: 25px;
+    }
+}
+.fancybox-skin {
+    padding: 25px 0 0 0!important;
 }
 .fancybox-inner{
-    width: 480px!important;
     height: 660px;
 }
 .fancybox-close {
@@ -155,8 +160,8 @@
     display: inline-block;
     vertical-align: top;
     position: absolute;
-    right: 11px;
-    top: 18px;
+    right: 19px;
+    top: 10px;
     width: 14px;
     height: 14px;
     cursor: pointer;
@@ -165,9 +170,6 @@
 .form-block {
     ~ .form-block {
         margin-top: 30px;
-    }
-    &.popup-registration {
-        display: none;
     }
 }
 

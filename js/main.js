@@ -52,35 +52,37 @@ $(function () {
     $("#datepicker").datepicker({
         inline: true
     });
-    $('.mobile-menu').click(function () {
+    $('.mobile-menu,.fade').click(function () {
         $('.fade').toggle();
         $('.navigation').toggle();
     });
+
     $('.question-block').click(function () {
         $(this).closest('.question-answer').find('.answer-block').slideToggle(200);
     });
 
+    $(".popup").fancybox();
 
-    var isShowInPopup = document.body.clientWidth >= 944;
-
-    $(".popup").click(function () {
-        if (isShowInPopup) {
-            $.fancybox({
-                href:'#popup'
-            });
-        } else {
-            var _offset = $('.form-block.popup-registration').offset().top;
-            $('body,html').animate({scrollTop: _offset}, 400)
-        }
-    });
-
-    $(window).resize(function () {
-        isShowInPopup = document.body.clientWidth >= 944;
-        if(!isShowInPopup){
-            $.fancybox.close();//закроет любой открытый в текущий момент попап
-        }
-        resizeReservText();
-    });
+    //var isShowInPopup = document.body.clientWidth >= 944;
+    //
+    //$(".popup").click(function () {
+    //    if (isShowInPopup) {
+    //        $.fancybox({
+    //            href:'#popup'
+    //        });
+    //    } else {
+    //        var _offset = $('.form-block.popup-registration').offset().top;
+    //        $('body,html').animate({scrollTop: _offset}, 400)
+    //    }
+    //});
+    //
+    //$(window).resize(function () {
+    //    isShowInPopup = document.body.clientWidth >= 944;
+    //    if(!isShowInPopup){
+    //        $.fancybox.close();//закроет любой открытый в текущий момент попап
+    //    }
+    //    resizeReservText();
+    //});
 
 
     $('.questions,.nav-link.faq').click(function () {

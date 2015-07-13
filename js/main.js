@@ -85,6 +85,14 @@ $(function () {
     //});
 
 
+
+    /*NOT DELETE*/
+    //$('.basket').click(function(){
+    //    $('.main-pic,.main-tab-item-wrapper,.form-column.numbers,.form-column.billing,.order-tab').toggle();
+    //    $('.form-column.check-result').toggle();
+    //});
+
+
     $('.questions,.nav-link.faq').click(function () {
         var tab_faq = $('.main-tab-item.faq');
         tab_faq.click();

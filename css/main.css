@@ -2147,7 +2147,19 @@ body {
 
 .question-block {
   font-weight: 700;
-  cursor: pointer; }
+  cursor: pointer;
+  position: relative;
+  padding-left: 20px; }
+  .question-block:before {
+    position: absolute;
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: url("../img/sprite.png") no-repeat scroll -30px -46px transparent;
+    top: 9px;
+    left: 0; }
+  .question-block.opened:before {
+    background-position: -30px -84px; }
 
 .answer-block {
   display: none;

@@ -58,7 +58,9 @@ $(function () {
     });
 
     $('.question-block').click(function () {
-        $(this).closest('.question-answer').find('.answer-block').slideToggle(200);
+        var _this = $(this);
+        _this.closest('.question-answer').find('.answer-block').slideToggle(200);
+        _this.toggleClass('opened');
     });
 
     $(".popup").fancybox();

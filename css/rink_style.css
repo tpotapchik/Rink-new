@@ -311,7 +311,7 @@ a {
     display: block;
     width: 12px;
     height: 12px;
-    background: url("../img/chosen-sprite.png") -42px 1px no-repeat;
+    background: url("../images/chosen-sprite.png") -42px 1px no-repeat;
     font-size: 1px; }
     .chosen-container-single .chosen-single abbr:hover {
       background-position: -42px -10px; }
@@ -326,7 +326,7 @@ a {
       display: block;
       width: 100%;
       height: 100%;
-      background: url("../img/chosen-sprite.png") no-repeat 0px 2px; }
+      background: url("../images/chosen-sprite.png") no-repeat 0px 2px; }
 .chosen-container-single .chosen-default {
   color: #999; }
 .chosen-container-single .chosen-single-with-deselect span {
@@ -349,8 +349,8 @@ a {
     height: auto;
     outline: 0;
     border: 1px solid #aaa;
-    background: white url("../img/chosen-sprite.png") no-repeat 100% -20px;
-    background: url("../img/chosen-sprite.png") no-repeat 100% -20px;
+    background: white url("../images/chosen-sprite.png") no-repeat 100% -20px;
+    background: url("../images/chosen-sprite.png") no-repeat 100% -20px;
     font-size: 1em;
     font-family: sans-serif;
     line-height: normal;
@@ -476,7 +476,7 @@ a {
   display: block;
   width: 12px;
   height: 12px;
-  background: url("../img/chosen-sprite.png") -42px 1px no-repeat;
+  background: url("../images/chosen-sprite.png") -42px 1px no-repeat;
   font-size: 1px; }
 
 .chosen-container-multi .chosen-choices li.search-choice .search-choice-close:hover {
@@ -582,8 +582,8 @@ a {
 
 .chosen-rtl .chosen-search input[type="text"] {
   padding: 4px 5px 4px 20px;
-  background: white url("../img/chosen-sprite.png") no-repeat -30px -20px;
-  background: url("../img/chosen-sprite.png") no-repeat -30px -20px;
+  background: white url("../images/chosen-sprite.png") no-repeat -30px -20px;
+  background: url("../images/chosen-sprite.png") no-repeat -30px -20px;
   direction: rtl; }
 
 .chosen-rtl.chosen-container-single .chosen-single div b {
@@ -602,7 +602,7 @@ a {
   .chosen-container-multi .chosen-choices .search-choice .search-choice-close,
   .chosen-container .chosen-results-scroll-down span,
   .chosen-container .chosen-results-scroll-up span {
-    background-image: url("../img/chosen-sprite@2x.png") !important;
+    background-image: url("../images/chosen-sprite@2x.png") !important;
     background-size: 52px 37px !important;
     background-repeat: no-repeat !important; } }
 /* @end */
@@ -901,25 +901,25 @@ a {
   height: 16px; }
 
 .ui-icon, .ui-widget-content .ui-icon {
-  background-image: url("../img/sprite.png"); }
+  background-image: url("../images/sprite.png"); }
 
 .ui-widget-header .ui-icon {
-  background-image: url("../img/sprite.png"); }
+  background-image: url("../images/sprite.png"); }
 
 .ui-state-default .ui-icon {
-  background-image: url("../img/sprite.png"); }
+  background-image: url("../images/sprite.png"); }
 
 .ui-state-hover .ui-icon, .ui-state-focus .ui-icon {
-  background-image: url("../img/sprite.png"); }
+  background-image: url("../images/sprite.png"); }
 
 .ui-state-active .ui-icon {
-  background-image: url("../img/sprite.png"); }
+  background-image: url("../images/sprite.png"); }
 
 .ui-state-highlight .ui-icon {
-  background-image: url("../img/sprite.png"); }
+  background-image: url("../images/sprite.png"); }
 
 .ui-state-error .ui-icon, .ui-state-error-text .ui-icon {
-  background-image: url("../img/sprite.png"); }
+  background-image: url("../images/sprite.png"); }
 
 .ui-icon-blank {
   background-position: 16px 16px; }
@@ -1521,7 +1521,7 @@ a {
   max-height: 100%; }
 
 #fancybox-loading, .fancybox-prev span, .fancybox-next span {
-  background: url("../img/fancybox_sprite.png") no-repeat scroll 0 0 transparent; }
+  background: url("../images/fancybox_sprite.png") no-repeat scroll 0 0 transparent; }
 
 #fancybox-loading {
   position: fixed;
@@ -1544,7 +1544,7 @@ a {
   height: 33px;
   top: -15px;
   right: -15px;
-  background: url("../img/fancybox_sprite.png") no-repeat scroll 0 0 transparent;
+  background: url("../images/fancybox_sprite.png") no-repeat scroll 0 0 transparent;
   cursor: pointer;
   z-index: 8040; }
 
@@ -1612,7 +1612,7 @@ a {
   overflow: hidden;
   display: none;
   z-index: 8010;
-  background: url("../img/fancybox_overlay.png"); }
+  background: url("../images/fancybox_overlay.png"); }
   .fancybox-lock .fancybox-overlay {
     overflow: auto;
     overflow-y: scroll; }
@@ -1784,7 +1784,7 @@ body {
     top: 0;
     opacity: 0; }
     .component-checkbox input + label:before {
-      background: url("../img/sprite.png") no-repeat scroll 0 -98px transparent;
+      background: url("../images/sprite.png") no-repeat scroll 0 -98px transparent;
       content: "";
       height: 41px;
       left: 0;
@@ -1820,7 +1820,7 @@ body {
       width: 29px;
       height: 100%; }
       .component-select .chosen-single div b {
-        background: url("../img/sprite.png") no-repeat scroll 0 -58px transparent;
+        background: url("../images/sprite.png") no-repeat scroll 0 -58px transparent;
         width: 12px;
         height: 6px;
         position: absolute;
@@ -1923,7 +1923,7 @@ body {
   font-size: 1.4em; }
 
 .logo {
-  background: url("../img/logo.png") no-repeat scroll 0 0 transparent;
+  background: url("../images/logo.png") no-repeat scroll 0 0 transparent;
   width: 197px;
   height: 70px;
   margin-top: 5px;
@@ -1986,7 +1986,7 @@ body {
   border: 1px solid #d7d7d7;
   text-align: center; }
   .questions ._ico {
-    background: url("../img/sprite.png") no-repeat scroll 0 0 transparent;
+    background: url("../images/sprite.png") no-repeat scroll 0 0 transparent;
     width: 15px;
     height: 25px;
     display: inline-block;
@@ -2011,7 +2011,7 @@ body {
     vertical-align: top;
     *display: inline;
     *zoom: 1;
-    background: url("../img/sprite.png") no-repeat scroll 0 -28px transparent;
+    background: url("../images/sprite.png") no-repeat scroll 0 -28px transparent;
     margin-top: 28px;
     position: relative; }
   .basket .count {
@@ -2038,11 +2038,11 @@ body {
   position: relative;
   overflow: hidden; }
   .main-pic ._bg {
-    background: url("../img/temp/item5-0.jpg") no-repeat 50% 50%;
+    background: url("../images/temp/item5-0.jpg") no-repeat 50% 50%;
     background-size: cover;
     height: 470px; }
   .main-pic.index-page ._bg {
-    background: url("../img/bg.jpg") no-repeat 50% 50%; }
+    background: url("../images/bg.jpg") no-repeat 50% 50%; }
 
 .main-pic-title {
   position: absolute;
@@ -2155,7 +2155,7 @@ body {
     content: '';
     width: 12px;
     height: 12px;
-    background: url("../img/sprite.png") no-repeat scroll -30px -46px transparent;
+    background: url("../images/sprite.png") no-repeat scroll -30px -46px transparent;
     top: 9px;
     left: 0; }
   .question-block.opened:before {
@@ -2196,22 +2196,22 @@ body {
     width: auto;
     height: 190px; }
     .reservation-item ._bg-pic.item1 {
-      background: url("../img/temp/item3.jpg") no-repeat 50% 50%;
+      background: url("../images/temp/item3.jpg") no-repeat 50% 50%;
       background-size: cover; }
     .reservation-item ._bg-pic.item2 {
-      background: url("../img/temp/item4.jpg") no-repeat 50% 50%;
+      background: url("../images/temp/item4.jpg") no-repeat 50% 50%;
       background-size: cover; }
     .reservation-item ._bg-pic.item3 {
-      background: url("../img/temp/item5-0.jpg") no-repeat 50% 50%;
+      background: url("../images/temp/item5-0.jpg") no-repeat 50% 50%;
       background-size: cover; }
     .reservation-item ._bg-pic.item4 {
-      background: url("../img/temp/item7.jpg") no-repeat 50% 50%;
+      background: url("../images/temp/item7.jpg") no-repeat 50% 50%;
       background-size: cover; }
     .reservation-item ._bg-pic.item5 {
-      background: url("../img/temp/item6.jpg") no-repeat 50% 50%;
+      background: url("../images/temp/item6.jpg") no-repeat 50% 50%;
       background-size: cover; }
     .reservation-item ._bg-pic.item6 {
-      background: url("../img/temp/item8.jpg") no-repeat 50% 50%;
+      background: url("../images/temp/item8.jpg") no-repeat 50% 50%;
       background-size: cover; }
   .reservation-item ._title-res {
     font-weight: 700;
@@ -2324,7 +2324,7 @@ body {
     *zoom: 1;
     width: 25px;
     height: 23px;
-    background: url("../img/sprite.png") no-repeat scroll 0 -67px transparent;
+    background: url("../images/sprite.png") no-repeat scroll 0 -67px transparent;
     margin-top: 9px; }
 
 .packages-info {
@@ -2429,7 +2429,7 @@ body {
   height: 660px; }
 
 .fancybox-close {
-  background: url("../img/sprite.png") no-repeat scroll -30px -68px transparent;
+  background: url("../images/sprite.png") no-repeat scroll -30px -68px transparent;
   display: inline-block;
   vertical-align: top;
   position: absolute;
@@ -2482,7 +2482,7 @@ body {
   margin: 15px 0 35px; }
 
 .sign-in-fb {
-  background: url("../img/facebook.jpg") no-repeat scroll 0 0 transparent; }
+  background: url("../images/facebook.jpg") no-repeat scroll 0 0 transparent; }
   .sign-in-fb a {
     display: inline-block;
     vertical-align: top;
@@ -2717,7 +2717,7 @@ body {
   padding-right: 20px;
   position: relative; }
   .quantity-check ._ico {
-    background: url("../img/sprite.png") no-repeat scroll -30px -68px transparent;
+    background: url("../images/sprite.png") no-repeat scroll -30px -68px transparent;
     display: inline-block;
     vertical-align: top;
     *display: inline;
@@ -3073,4 +3073,4 @@ body {
   .text-link {
     float: left !important; } }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=rink_style.css.map */

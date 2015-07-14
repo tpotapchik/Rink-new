@@ -156,13 +156,13 @@
     position: relative;
     overflow: hidden;
     ._bg {
-        background: url("../img/temp/item5-0.jpg") no-repeat 50% 50%;;
+        background: url("../images/temp/item5-0.jpg") no-repeat 50% 50%;;
         background-size: cover;
 
         height: 470px;
     }
     &.index-page ._bg {
-        background: url("../img/bg.jpg") no-repeat 50% 50%;;
+        background: url("../images/bg.jpg") no-repeat 50% 50%;;
     }
 }
 
@@ -361,27 +361,27 @@
         height: 190px;
 
         &.item1 {
-            background: url('../img/temp/item3.jpg') no-repeat 50% 50%;
+            background: url('../images/temp/item3.jpg') no-repeat 50% 50%;
             background-size: cover;
         }
         &.item2 {
-            background: url('../img/temp/item4.jpg') no-repeat 50% 50%;
+            background: url('../images/temp/item4.jpg') no-repeat 50% 50%;
             background-size: cover;
         }
         &.item3 {
-            background: url('../img/temp/item5-0.jpg') no-repeat 50% 50%;
+            background: url('../images/temp/item5-0.jpg') no-repeat 50% 50%;
             background-size: cover;
         }
         &.item4 {
-            background: url('../img/temp/item7.jpg') no-repeat 50% 50%;
+            background: url('../images/temp/item7.jpg') no-repeat 50% 50%;
             background-size: cover;
         }
         &.item5 {
-            background: url('../img/temp/item6.jpg') no-repeat 50% 50%;
+            background: url('../images/temp/item6.jpg') no-repeat 50% 50%;
             background-size: cover;
         }
         &.item6 {
-            background: url('../img/temp/item8.jpg') no-repeat 50% 50%;
+            background: url('../images/temp/item8.jpg') no-repeat 50% 50%;
             background-size: cover;
         }
 

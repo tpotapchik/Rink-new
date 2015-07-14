@@ -7,7 +7,7 @@
 }
 
 @mixin bg($left: 0, $top: 0, $file: "sprite.png", $repeat: no-repeat) {
-    background: url("../img/#{$file}") $repeat scroll $left $top transparent;
+    background: url("../images/#{$file}") $repeat scroll $left $top transparent;
 }
 
 @mixin clear() {

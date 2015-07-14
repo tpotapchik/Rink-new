@@ -78,13 +78,13 @@ $(function () {
     //    }
     //});
     //
-    //$(window).resize(function () {
-    //    isShowInPopup = document.body.clientWidth >= 944;
-    //    if(!isShowInPopup){
-    //        $.fancybox.close();//закроет любой открытый в текущий момент попап
-    //    }
-    //    resizeReservText();
-    //});
+    $(window).resize(function () {
+        //isShowInPopup = document.body.clientWidth >= 944;
+        //if(!isShowInPopup){
+        //    $.fancybox.close();//закроет любой открытый в текущий момент попап
+        //}
+        resizeReservText();
+    });
 
 
 

@@ -182,6 +182,7 @@
         top: 46px;
         left: 0;
         bottom: 0;
+        text-align: left;
         //height: 100%;
         z-index: 5;
         margin-left: 0;
@@ -350,6 +351,9 @@
     }
     .answer-block {
         margin-left: 20px;
+    }
+    .ui-datepicker {
+        margin: auto;
     }
 }
 @media screen and (max-width: 320px) {

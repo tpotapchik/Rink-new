@@ -2040,7 +2040,9 @@ body {
   .main-pic ._bg {
     background: url("../images/temp/item5-0.jpg") no-repeat 50% 50%;
     background-size: cover;
-    height: 470px; }
+    height: 470px;
+    max-width: 2000px;
+    margin: auto; }
   .main-pic.index-page ._bg {
     background: url("../images/bg.jpg") no-repeat 50% 50%; }
 

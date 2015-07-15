@@ -158,8 +158,9 @@
     ._bg {
         background: url("../images/temp/item5-0.jpg") no-repeat 50% 50%;;
         background-size: cover;
-
         height: 470px;
+        max-width: 2000px;
+        margin: auto;
     }
     &.index-page ._bg {
         background: url("../images/bg.jpg") no-repeat 50% 50%;;
@@ -386,7 +387,7 @@
         }
 
     }
-    
+
     ._title-res {
         font-weight: 700;
         text-transform: uppercase;

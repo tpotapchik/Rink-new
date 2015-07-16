@@ -104,7 +104,7 @@ $(function () {
             'scrollTop': _offset
         }, 400)
     });
-    $('.buy-tickets,.reserve-tickets, .nav-link.tickets').click(function () {
+    $('.indexPage .buy-tickets,.reserve-tickets,.indexPage  .nav-link.tickets').click(function () {
         var tab_faq = $('.main-tab-item.reserv');
         tab_faq.click();
         var _offset = tab_faq.offset().top;
@@ -113,6 +113,16 @@ $(function () {
             'scrollTop': _offset
         }, 400)
     });
+    $('.orderPages .buy-tickets,.orderPages  .nav-link.tickets').click(function () {
+        var tab_faq = $('.main-tab-item.info ');
+        tab_faq.click();
+        var _offset = tab_faq.offset().top;
+
+        $('body,html').animate({
+            'scrollTop': _offset
+        }, 400)
+    });
+
     $('.nav-link.to-home').click(function () {
         var tab_faq = $('.main-tab-item.welc');
         tab_faq.click();

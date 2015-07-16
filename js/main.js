@@ -55,6 +55,7 @@ $(function () {
     $('.mobile-menu,.fade').click(function () {
         $('.fade').toggle();
         $('.navigation').toggle();
+        $('.nav-link').toggleClass('mobile');
     });
 
     $('.question-block').click(function () {
@@ -94,8 +95,7 @@ $(function () {
     //    $('.form-column.check-result').toggle();
     //});
 
-
-    $('.questions,.nav-link.faq').click(function () {
+    function questClick () {
         var tab_faq = $('.main-tab-item.faq');
         tab_faq.click();
         var _offset = tab_faq.offset().top;
@@ -103,8 +103,22 @@ $(function () {
         $('body,html').animate({
             'scrollTop': _offset
         }, 400)
+    }
+    $('.questions').click(function () {
+        questClick();
     });
-    $('.indexPage .buy-tickets,.reserve-tickets,.indexPage  .nav-link.tickets').click(function () {
+
+
+    $('.nav-link.faq').click(function () {
+        var $this = $(this);
+        if ($this.hasClass('mobile')) {
+            $('.mobile-menu').click();
+        }
+        questClick();
+    });
+
+
+    function ticketClick () {
         var tab_faq = $('.main-tab-item.reserv');
         tab_faq.click();
         var _offset = tab_faq.offset().top;
@@ -112,8 +126,20 @@ $(function () {
         $('body,html').animate({
             'scrollTop': _offset
         }, 400)
+    }
+
+    $('.indexPage .nav-link.tickets').click(function () {
+        var $this = $(this);
+        if ($this.hasClass('mobile')) {
+            $('.mobile-menu').click();
+        }
+        ticketClick();
     });
-    $('.orderPages .buy-tickets,.orderPages  .nav-link.tickets').click(function () {
+
+    $('.reserve-tickets, .indexPage .buy-tickets').click(function () {
+        ticketClick();
+    });
+    function ticketOrderClick () {
         var tab_faq = $('.main-tab-item.info ');
         tab_faq.click();
         var _offset = tab_faq.offset().top;
@@ -121,9 +147,25 @@ $(function () {
         $('body,html').animate({
             'scrollTop': _offset
         }, 400)
+    }
+
+    $('.orderPages .nav-link.tickets').click(function () {
+        var $this = $(this);
+        if ($this.hasClass('mobile')) {
+            $('.mobile-menu').click();
+        }
+        ticketOrderClick();
     });
 
-    $('.nav-link.to-home').click(function () {
+    $('.orderPages .buy-tickets').click(function () {
+        ticketOrderClick();
+    });
+
+    $('.indexPage .nav-link.to-home').click(function () {
+        var $this = $(this);
+        if ($this.hasClass('mobile')) {
+            $('.mobile-menu').click();
+        }
         var tab_faq = $('.main-tab-item.welc');
         tab_faq.click();
         var _offset = tab_faq.offset().top;
@@ -132,6 +174,15 @@ $(function () {
             'scrollTop': _offset
         }, 400)
     });
+    $('.orderPages .nav-link.to-home').click(function () {
+        var $this = $(this);
+        if ($this.hasClass('mobile')) {
+            $('.mobile-menu').click();
+        }
+    });
+
+
+
 
     function resizeReservText() {
         var maxHeight = 0;
